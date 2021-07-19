@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace ExamTimetableApp
 {
-    public partial class Login : Form
+    public partial class AdminLoginForm : Form
     {
-        public Login()
+        public AdminLoginForm()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            AdminLoginForm al = new AdminLoginForm();
-            al.ShowDialog();
         }
     }
 }
