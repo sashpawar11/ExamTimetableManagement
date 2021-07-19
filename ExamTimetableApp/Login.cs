@@ -19,8 +19,18 @@ namespace ExamTimetableApp
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             AdminLoginForm al = new AdminLoginForm();
-            al.ShowDialog();
+            al.Closed += (s, args) =>this.Close();
+            al.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            StudentSelectionMenu sm= new StudentSelectionMenu();
+            sm.Closed += (s, args) => this.Close();
+            sm.Show();
         }
     }
 }
