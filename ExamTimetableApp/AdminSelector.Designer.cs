@@ -36,8 +36,6 @@ namespace ExamTimetableApp
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,8 +44,6 @@ namespace ExamTimetableApp
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.comboBox1);
@@ -61,7 +57,7 @@ namespace ExamTimetableApp
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(252, 250);
+            this.button1.Location = new System.Drawing.Point(252, 196);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(296, 37);
             this.button1.TabIndex = 14;
@@ -116,36 +112,12 @@ namespace ExamTimetableApp
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(252, 302);
+            this.button2.Location = new System.Drawing.Point(252, 271);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(296, 37);
             this.button2.TabIndex = 15;
             this.button2.Text = "Update Timetable";
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6"});
-            this.comboBox2.Location = new System.Drawing.Point(252, 180);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(296, 24);
-            this.comboBox2.TabIndex = 17;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(93, 183);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 17);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Number of Subjects :";
             // 
             // AdminSelector
             // 
@@ -171,7 +143,5 @@ namespace ExamTimetableApp
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label3;
     }
 }
