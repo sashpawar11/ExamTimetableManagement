@@ -3,7 +3,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-This is a project developed in C# and ASP.NET
+This is a project developed in C# and .NET
 
 ## Features
 
