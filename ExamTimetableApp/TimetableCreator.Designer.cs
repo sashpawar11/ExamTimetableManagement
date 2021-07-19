@@ -89,6 +89,7 @@ namespace ExamTimetableApp
             this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
+            this.label27 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.sub1.SuspendLayout();
             this.sub2.SuspendLayout();
@@ -112,7 +113,7 @@ namespace ExamTimetableApp
             "6"});
             this.numSub.Location = new System.Drawing.Point(25, 78);
             this.numSub.Name = "numSub";
-            this.numSub.Size = new System.Drawing.Size(180, 24);
+            this.numSub.Size = new System.Drawing.Size(214, 24);
             this.numSub.TabIndex = 19;
             this.numSub.SelectedIndexChanged += new System.EventHandler(this.numSub_SelectedIndexChanged);
             // 
@@ -129,6 +130,7 @@ namespace ExamTimetableApp
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label27);
             this.panel1.Controls.Add(this.textBox5);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label6);
@@ -170,6 +172,7 @@ namespace ExamTimetableApp
             this.sub1.Controls.Add(this.label1);
             this.sub1.Location = new System.Drawing.Point(294, 34);
             this.sub1.Name = "sub1";
+            this.sub1.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.sub1.Size = new System.Drawing.Size(257, 347);
             this.sub1.TabIndex = 22;
             // 
@@ -271,6 +274,7 @@ namespace ExamTimetableApp
             this.sub2.Controls.Add(this.label10);
             this.sub2.Location = new System.Drawing.Point(567, 34);
             this.sub2.Name = "sub2";
+            this.sub2.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.sub2.Size = new System.Drawing.Size(257, 347);
             this.sub2.TabIndex = 29;
             // 
@@ -352,6 +356,7 @@ namespace ExamTimetableApp
             this.sub3.Controls.Add(this.label14);
             this.sub3.Location = new System.Drawing.Point(846, 34);
             this.sub3.Name = "sub3";
+            this.sub3.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.sub3.Size = new System.Drawing.Size(257, 347);
             this.sub3.TabIndex = 30;
             // 
@@ -433,6 +438,7 @@ namespace ExamTimetableApp
             this.sub5.Controls.Add(this.label18);
             this.sub5.Location = new System.Drawing.Point(294, 402);
             this.sub5.Name = "sub5";
+            this.sub5.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.sub5.Size = new System.Drawing.Size(257, 347);
             this.sub5.TabIndex = 30;
             // 
@@ -514,6 +520,7 @@ namespace ExamTimetableApp
             this.sub6.Controls.Add(this.label22);
             this.sub6.Location = new System.Drawing.Point(567, 402);
             this.sub6.Name = "sub6";
+            this.sub6.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.sub6.Size = new System.Drawing.Size(257, 347);
             this.sub6.TabIndex = 30;
             // 
@@ -595,6 +602,7 @@ namespace ExamTimetableApp
             this.sub4.Controls.Add(this.label26);
             this.sub4.Location = new System.Drawing.Point(19, 402);
             this.sub4.Name = "sub4";
+            this.sub4.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.sub4.Size = new System.Drawing.Size(257, 347);
             this.sub4.TabIndex = 30;
             // 
@@ -708,13 +716,22 @@ namespace ExamTimetableApp
             this.dateTimePicker5.Size = new System.Drawing.Size(213, 22);
             this.dateTimePicker5.TabIndex = 30;
             // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(14, 291);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(247, 34);
+            this.label27.TabIndex = 31;
+            this.label27.Text = "Enter subject names according to the \r\norder of dates";
+            // 
             // TimetableCreator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1202, 761);
+            this.ClientSize = new System.Drawing.Size(1159, 762);
             this.Controls.Add(this.sub4);
             this.Controls.Add(this.sub6);
             this.Controls.Add(this.sub5);
@@ -722,7 +739,9 @@ namespace ExamTimetableApp
             this.Controls.Add(this.sub2);
             this.Controls.Add(this.sub1);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "TimetableCreator";
+            this.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TimetableCreator";
             this.Load += new System.EventHandler(this.TimetableCreator_Load);
@@ -806,5 +825,6 @@ namespace ExamTimetableApp
         private System.Windows.Forms.DateTimePicker dateTimePicker4;
         private System.Windows.Forms.DateTimePicker dateTimePicker5;
         private System.Windows.Forms.DateTimePicker dateTimePicker6;
+        private System.Windows.Forms.Label label27;
     }
 }

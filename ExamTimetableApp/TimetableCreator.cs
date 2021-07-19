@@ -66,10 +66,18 @@ namespace ExamTimetableApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            TimeTable tm = new TimeTable();
-            tm.Closed += (s, args) => this.Close();
-            tm.Show();
+            bool sub = string.IsNullOrEmpty(numSub.Text.ToString());
+            if (sub)
+            {
+                MessageBox.Show("Please Select Number of Subjects!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                this.Hide();
+                TimeTable tm = new TimeTable();
+                tm.Closed += (s, args) => this.Close();
+                tm.Show();
+            }
         }
 
         private void TimetableCreator_Load(object sender, EventArgs e)
