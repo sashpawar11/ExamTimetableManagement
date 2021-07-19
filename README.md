@@ -7,7 +7,7 @@ This is a project developed in C# and ASP.NET
 
 ## Features
 
-- Login as Student / College
+- Login as Student / College Administrator
 - Students can view timetables based on their department/year/sem
 - Students can Save Timetable as PDF and share
 - College administration can easily Create Timetable and Update if necessary.
