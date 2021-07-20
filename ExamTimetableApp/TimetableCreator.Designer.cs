@@ -32,64 +32,64 @@ namespace ExamTimetableApp
             this.numSub = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.sub1 = new System.Windows.Forms.Panel();
+            this.label27 = new System.Windows.Forms.Label();
+            this.examtitle = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.sub1name = new System.Windows.Forms.TextBox();
+            this.sub1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.sub1date = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
             this.sub2 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.sub2date = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.sub2name = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.sub3 = new System.Windows.Forms.Panel();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.sub3date = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.sub3name = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.sub5 = new System.Windows.Forms.Panel();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.sub5date = new System.Windows.Forms.DateTimePicker();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.sub5name = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.sub6 = new System.Windows.Forms.Panel();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.sub6date = new System.Windows.Forms.DateTimePicker();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.sub6name = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.sub4 = new System.Windows.Forms.Panel();
-            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.sub4date = new System.Windows.Forms.DateTimePicker();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.sub4name = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
-            this.label27 = new System.Windows.Forms.Label();
+            this.sub1start = new System.Windows.Forms.DateTimePicker();
+            this.sub1end = new System.Windows.Forms.DateTimePicker();
+            this.sub2start = new System.Windows.Forms.DateTimePicker();
+            this.sub3start = new System.Windows.Forms.DateTimePicker();
+            this.sub2end = new System.Windows.Forms.DateTimePicker();
+            this.sub3end = new System.Windows.Forms.DateTimePicker();
+            this.sub4start = new System.Windows.Forms.DateTimePicker();
+            this.sub4end = new System.Windows.Forms.DateTimePicker();
+            this.sub5start = new System.Windows.Forms.DateTimePicker();
+            this.sub5end = new System.Windows.Forms.DateTimePicker();
+            this.sub6start = new System.Windows.Forms.DateTimePicker();
+            this.sub6end = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.sub1.SuspendLayout();
             this.sub2.SuspendLayout();
@@ -131,7 +131,7 @@ namespace ExamTimetableApp
             // panel1
             // 
             this.panel1.Controls.Add(this.label27);
-            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.examtitle);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label3);
@@ -141,40 +141,22 @@ namespace ExamTimetableApp
             this.panel1.Size = new System.Drawing.Size(264, 347);
             this.panel1.TabIndex = 20;
             // 
-            // label1
+            // label27
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 17);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Subject 1 Name :";
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(14, 291);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(247, 34);
+            this.label27.TabIndex = 31;
+            this.label27.Text = "Enter subject names according to the \r\norder of dates";
             // 
-            // textBox1
+            // examtitle
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 47);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(214, 22);
-            this.textBox1.TabIndex = 21;
-            // 
-            // sub1
-            // 
-            this.sub1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sub1.Controls.Add(this.textBox4);
-            this.sub1.Controls.Add(this.label5);
-            this.sub1.Controls.Add(this.textBox3);
-            this.sub1.Controls.Add(this.label4);
-            this.sub1.Controls.Add(this.dateTimePicker1);
-            this.sub1.Controls.Add(this.label2);
-            this.sub1.Controls.Add(this.textBox1);
-            this.sub1.Controls.Add(this.label1);
-            this.sub1.Location = new System.Drawing.Point(294, 34);
-            this.sub1.Name = "sub1";
-            this.sub1.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.sub1.Size = new System.Drawing.Size(257, 347);
-            this.sub1.TabIndex = 22;
+            this.examtitle.Location = new System.Drawing.Point(25, 169);
+            this.examtitle.Multiline = true;
+            this.examtitle.Name = "examtitle";
+            this.examtitle.Size = new System.Drawing.Size(214, 22);
+            this.examtitle.TabIndex = 30;
             // 
             // button1
             // 
@@ -185,70 +167,6 @@ namespace ExamTimetableApp
             this.button1.Text = "Generate Timetable";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 95);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 17);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Date :";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CustomFormat = "dddd dd/MM/yyyy ";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(13, 115);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(213, 22);
-            this.dateTimePicker1.TabIndex = 24;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(13, 188);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(214, 22);
-            this.textBox3.TabIndex = 26;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(10, 168);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 17);
-            this.label4.TabIndex = 25;
-            this.label4.Text = "Start Time :";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(13, 256);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(214, 22);
-            this.textBox4.TabIndex = 28;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(10, 236);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 17);
-            this.label5.TabIndex = 27;
-            this.label5.Text = "End Time :";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(25, 169);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(214, 22);
-            this.textBox5.TabIndex = 30;
             // 
             // label6
             // 
@@ -261,16 +179,93 @@ namespace ExamTimetableApp
             this.label6.TabIndex = 29;
             this.label6.Text = "Examination Title :";
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(10, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(116, 17);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Subject 1 Name :";
+            // 
+            // sub1name
+            // 
+            this.sub1name.Location = new System.Drawing.Point(13, 47);
+            this.sub1name.Name = "sub1name";
+            this.sub1name.Size = new System.Drawing.Size(214, 22);
+            this.sub1name.TabIndex = 21;
+            // 
+            // sub1
+            // 
+            this.sub1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sub1.Controls.Add(this.sub1end);
+            this.sub1.Controls.Add(this.sub1start);
+            this.sub1.Controls.Add(this.label5);
+            this.sub1.Controls.Add(this.label4);
+            this.sub1.Controls.Add(this.sub1date);
+            this.sub1.Controls.Add(this.label2);
+            this.sub1.Controls.Add(this.sub1name);
+            this.sub1.Controls.Add(this.label1);
+            this.sub1.Location = new System.Drawing.Point(294, 34);
+            this.sub1.Name = "sub1";
+            this.sub1.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.sub1.Size = new System.Drawing.Size(257, 347);
+            this.sub1.TabIndex = 22;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(10, 236);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(76, 17);
+            this.label5.TabIndex = 27;
+            this.label5.Text = "End Time :";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(10, 168);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(81, 17);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "Start Time :";
+            // 
+            // sub1date
+            // 
+            this.sub1date.CustomFormat = "dddd dd/MM/yyyy ";
+            this.sub1date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.sub1date.Location = new System.Drawing.Point(13, 115);
+            this.sub1date.Name = "sub1date";
+            this.sub1date.Size = new System.Drawing.Size(213, 22);
+            this.sub1date.TabIndex = 24;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(10, 95);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 17);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Date :";
+            // 
             // sub2
             // 
             this.sub2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sub2.Controls.Add(this.dateTimePicker2);
-            this.sub2.Controls.Add(this.textBox6);
+            this.sub2.Controls.Add(this.sub2end);
+            this.sub2.Controls.Add(this.sub2start);
+            this.sub2.Controls.Add(this.sub2date);
             this.sub2.Controls.Add(this.label7);
-            this.sub2.Controls.Add(this.textBox7);
             this.sub2.Controls.Add(this.label8);
             this.sub2.Controls.Add(this.label9);
-            this.sub2.Controls.Add(this.textBox9);
+            this.sub2.Controls.Add(this.sub2name);
             this.sub2.Controls.Add(this.label10);
             this.sub2.Location = new System.Drawing.Point(567, 34);
             this.sub2.Name = "sub2";
@@ -278,12 +273,14 @@ namespace ExamTimetableApp
             this.sub2.Size = new System.Drawing.Size(257, 347);
             this.sub2.TabIndex = 29;
             // 
-            // textBox6
+            // sub2date
             // 
-            this.textBox6.Location = new System.Drawing.Point(13, 256);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(214, 22);
-            this.textBox6.TabIndex = 28;
+            this.sub2date.CustomFormat = "dddd dd/MM/yyyy ";
+            this.sub2date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.sub2date.Location = new System.Drawing.Point(13, 115);
+            this.sub2date.Name = "sub2date";
+            this.sub2date.Size = new System.Drawing.Size(213, 22);
+            this.sub2date.TabIndex = 29;
             // 
             // label7
             // 
@@ -295,13 +292,6 @@ namespace ExamTimetableApp
             this.label7.Size = new System.Drawing.Size(76, 17);
             this.label7.TabIndex = 27;
             this.label7.Text = "End Time :";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(13, 188);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(214, 22);
-            this.textBox7.TabIndex = 26;
             // 
             // label8
             // 
@@ -325,12 +315,12 @@ namespace ExamTimetableApp
             this.label9.TabIndex = 22;
             this.label9.Text = "Date :";
             // 
-            // textBox9
+            // sub2name
             // 
-            this.textBox9.Location = new System.Drawing.Point(13, 47);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(214, 22);
-            this.textBox9.TabIndex = 21;
+            this.sub2name.Location = new System.Drawing.Point(13, 47);
+            this.sub2name.Name = "sub2name";
+            this.sub2name.Size = new System.Drawing.Size(214, 22);
+            this.sub2name.TabIndex = 21;
             // 
             // label10
             // 
@@ -346,13 +336,13 @@ namespace ExamTimetableApp
             // sub3
             // 
             this.sub3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sub3.Controls.Add(this.dateTimePicker3);
-            this.sub3.Controls.Add(this.textBox10);
+            this.sub3.Controls.Add(this.sub3end);
+            this.sub3.Controls.Add(this.sub3start);
+            this.sub3.Controls.Add(this.sub3date);
             this.sub3.Controls.Add(this.label11);
-            this.sub3.Controls.Add(this.textBox11);
             this.sub3.Controls.Add(this.label12);
             this.sub3.Controls.Add(this.label13);
-            this.sub3.Controls.Add(this.textBox13);
+            this.sub3.Controls.Add(this.sub3name);
             this.sub3.Controls.Add(this.label14);
             this.sub3.Location = new System.Drawing.Point(846, 34);
             this.sub3.Name = "sub3";
@@ -360,12 +350,14 @@ namespace ExamTimetableApp
             this.sub3.Size = new System.Drawing.Size(257, 347);
             this.sub3.TabIndex = 30;
             // 
-            // textBox10
+            // sub3date
             // 
-            this.textBox10.Location = new System.Drawing.Point(13, 256);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(214, 22);
-            this.textBox10.TabIndex = 28;
+            this.sub3date.CustomFormat = "dddd dd/MM/yyyy ";
+            this.sub3date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.sub3date.Location = new System.Drawing.Point(13, 115);
+            this.sub3date.Name = "sub3date";
+            this.sub3date.Size = new System.Drawing.Size(213, 22);
+            this.sub3date.TabIndex = 29;
             // 
             // label11
             // 
@@ -377,13 +369,6 @@ namespace ExamTimetableApp
             this.label11.Size = new System.Drawing.Size(76, 17);
             this.label11.TabIndex = 27;
             this.label11.Text = "End Time :";
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(13, 188);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(214, 22);
-            this.textBox11.TabIndex = 26;
             // 
             // label12
             // 
@@ -407,12 +392,12 @@ namespace ExamTimetableApp
             this.label13.TabIndex = 22;
             this.label13.Text = "Date :";
             // 
-            // textBox13
+            // sub3name
             // 
-            this.textBox13.Location = new System.Drawing.Point(13, 47);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(214, 22);
-            this.textBox13.TabIndex = 21;
+            this.sub3name.Location = new System.Drawing.Point(13, 47);
+            this.sub3name.Name = "sub3name";
+            this.sub3name.Size = new System.Drawing.Size(214, 22);
+            this.sub3name.TabIndex = 21;
             // 
             // label14
             // 
@@ -428,13 +413,13 @@ namespace ExamTimetableApp
             // sub5
             // 
             this.sub5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sub5.Controls.Add(this.dateTimePicker4);
-            this.sub5.Controls.Add(this.textBox14);
+            this.sub5.Controls.Add(this.sub5end);
+            this.sub5.Controls.Add(this.sub5start);
+            this.sub5.Controls.Add(this.sub5date);
             this.sub5.Controls.Add(this.label15);
-            this.sub5.Controls.Add(this.textBox15);
             this.sub5.Controls.Add(this.label16);
             this.sub5.Controls.Add(this.label17);
-            this.sub5.Controls.Add(this.textBox17);
+            this.sub5.Controls.Add(this.sub5name);
             this.sub5.Controls.Add(this.label18);
             this.sub5.Location = new System.Drawing.Point(294, 402);
             this.sub5.Name = "sub5";
@@ -442,12 +427,14 @@ namespace ExamTimetableApp
             this.sub5.Size = new System.Drawing.Size(257, 347);
             this.sub5.TabIndex = 30;
             // 
-            // textBox14
+            // sub5date
             // 
-            this.textBox14.Location = new System.Drawing.Point(13, 256);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(214, 22);
-            this.textBox14.TabIndex = 28;
+            this.sub5date.CustomFormat = "dddd dd/MM/yyyy ";
+            this.sub5date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.sub5date.Location = new System.Drawing.Point(13, 115);
+            this.sub5date.Name = "sub5date";
+            this.sub5date.Size = new System.Drawing.Size(213, 22);
+            this.sub5date.TabIndex = 30;
             // 
             // label15
             // 
@@ -459,13 +446,6 @@ namespace ExamTimetableApp
             this.label15.Size = new System.Drawing.Size(76, 17);
             this.label15.TabIndex = 27;
             this.label15.Text = "End Time :";
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(13, 188);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(214, 22);
-            this.textBox15.TabIndex = 26;
             // 
             // label16
             // 
@@ -489,12 +469,12 @@ namespace ExamTimetableApp
             this.label17.TabIndex = 22;
             this.label17.Text = "Date :";
             // 
-            // textBox17
+            // sub5name
             // 
-            this.textBox17.Location = new System.Drawing.Point(13, 47);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(214, 22);
-            this.textBox17.TabIndex = 21;
+            this.sub5name.Location = new System.Drawing.Point(13, 47);
+            this.sub5name.Name = "sub5name";
+            this.sub5name.Size = new System.Drawing.Size(214, 22);
+            this.sub5name.TabIndex = 21;
             // 
             // label18
             // 
@@ -510,13 +490,13 @@ namespace ExamTimetableApp
             // sub6
             // 
             this.sub6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sub6.Controls.Add(this.dateTimePicker5);
-            this.sub6.Controls.Add(this.textBox18);
+            this.sub6.Controls.Add(this.sub6end);
+            this.sub6.Controls.Add(this.sub6start);
+            this.sub6.Controls.Add(this.sub6date);
             this.sub6.Controls.Add(this.label19);
-            this.sub6.Controls.Add(this.textBox19);
             this.sub6.Controls.Add(this.label20);
             this.sub6.Controls.Add(this.label21);
-            this.sub6.Controls.Add(this.textBox21);
+            this.sub6.Controls.Add(this.sub6name);
             this.sub6.Controls.Add(this.label22);
             this.sub6.Location = new System.Drawing.Point(567, 402);
             this.sub6.Name = "sub6";
@@ -524,12 +504,14 @@ namespace ExamTimetableApp
             this.sub6.Size = new System.Drawing.Size(257, 347);
             this.sub6.TabIndex = 30;
             // 
-            // textBox18
+            // sub6date
             // 
-            this.textBox18.Location = new System.Drawing.Point(13, 256);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(214, 22);
-            this.textBox18.TabIndex = 28;
+            this.sub6date.CustomFormat = "dddd dd/MM/yyyy ";
+            this.sub6date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.sub6date.Location = new System.Drawing.Point(13, 115);
+            this.sub6date.Name = "sub6date";
+            this.sub6date.Size = new System.Drawing.Size(213, 22);
+            this.sub6date.TabIndex = 30;
             // 
             // label19
             // 
@@ -541,13 +523,6 @@ namespace ExamTimetableApp
             this.label19.Size = new System.Drawing.Size(76, 17);
             this.label19.TabIndex = 27;
             this.label19.Text = "End Time :";
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(13, 188);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(214, 22);
-            this.textBox19.TabIndex = 26;
             // 
             // label20
             // 
@@ -571,12 +546,12 @@ namespace ExamTimetableApp
             this.label21.TabIndex = 22;
             this.label21.Text = "Date :";
             // 
-            // textBox21
+            // sub6name
             // 
-            this.textBox21.Location = new System.Drawing.Point(13, 47);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(214, 22);
-            this.textBox21.TabIndex = 21;
+            this.sub6name.Location = new System.Drawing.Point(13, 47);
+            this.sub6name.Name = "sub6name";
+            this.sub6name.Size = new System.Drawing.Size(214, 22);
+            this.sub6name.TabIndex = 21;
             // 
             // label22
             // 
@@ -592,13 +567,13 @@ namespace ExamTimetableApp
             // sub4
             // 
             this.sub4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sub4.Controls.Add(this.dateTimePicker6);
-            this.sub4.Controls.Add(this.textBox22);
+            this.sub4.Controls.Add(this.sub4end);
+            this.sub4.Controls.Add(this.sub4start);
+            this.sub4.Controls.Add(this.sub4date);
             this.sub4.Controls.Add(this.label23);
-            this.sub4.Controls.Add(this.textBox23);
             this.sub4.Controls.Add(this.label24);
             this.sub4.Controls.Add(this.label25);
-            this.sub4.Controls.Add(this.textBox25);
+            this.sub4.Controls.Add(this.sub4name);
             this.sub4.Controls.Add(this.label26);
             this.sub4.Location = new System.Drawing.Point(19, 402);
             this.sub4.Name = "sub4";
@@ -606,12 +581,14 @@ namespace ExamTimetableApp
             this.sub4.Size = new System.Drawing.Size(257, 347);
             this.sub4.TabIndex = 30;
             // 
-            // textBox22
+            // sub4date
             // 
-            this.textBox22.Location = new System.Drawing.Point(13, 256);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(214, 22);
-            this.textBox22.TabIndex = 28;
+            this.sub4date.CustomFormat = "dddd dd/MM/yyyy ";
+            this.sub4date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.sub4date.Location = new System.Drawing.Point(13, 115);
+            this.sub4date.Name = "sub4date";
+            this.sub4date.Size = new System.Drawing.Size(213, 22);
+            this.sub4date.TabIndex = 30;
             // 
             // label23
             // 
@@ -623,13 +600,6 @@ namespace ExamTimetableApp
             this.label23.Size = new System.Drawing.Size(76, 17);
             this.label23.TabIndex = 27;
             this.label23.Text = "End Time :";
-            // 
-            // textBox23
-            // 
-            this.textBox23.Location = new System.Drawing.Point(13, 188);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(214, 22);
-            this.textBox23.TabIndex = 26;
             // 
             // label24
             // 
@@ -653,12 +623,12 @@ namespace ExamTimetableApp
             this.label25.TabIndex = 22;
             this.label25.Text = "Date :";
             // 
-            // textBox25
+            // sub4name
             // 
-            this.textBox25.Location = new System.Drawing.Point(13, 47);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(214, 22);
-            this.textBox25.TabIndex = 21;
+            this.sub4name.Location = new System.Drawing.Point(13, 47);
+            this.sub4name.Name = "sub4name";
+            this.sub4name.Size = new System.Drawing.Size(214, 22);
+            this.sub4name.TabIndex = 21;
             // 
             // label26
             // 
@@ -671,59 +641,113 @@ namespace ExamTimetableApp
             this.label26.TabIndex = 20;
             this.label26.Text = "Subject 4 Name :";
             // 
-            // dateTimePicker2
+            // sub1start
             // 
-            this.dateTimePicker2.CustomFormat = "dddd dd/MM/yyyy ";
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(13, 115);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(213, 22);
-            this.dateTimePicker2.TabIndex = 29;
+            this.sub1start.CustomFormat = "hh:mm";
+            this.sub1start.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.sub1start.Location = new System.Drawing.Point(13, 188);
+            this.sub1start.Name = "sub1start";
+            this.sub1start.Size = new System.Drawing.Size(213, 22);
+            this.sub1start.TabIndex = 29;
             // 
-            // dateTimePicker3
+            // sub1end
             // 
-            this.dateTimePicker3.CustomFormat = "dddd dd/MM/yyyy ";
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker3.Location = new System.Drawing.Point(13, 115);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(213, 22);
-            this.dateTimePicker3.TabIndex = 29;
+            this.sub1end.CustomFormat = "hh:mm";
+            this.sub1end.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.sub1end.Location = new System.Drawing.Point(14, 256);
+            this.sub1end.Name = "sub1end";
+            this.sub1end.Size = new System.Drawing.Size(213, 22);
+            this.sub1end.TabIndex = 30;
             // 
-            // dateTimePicker6
+            // sub2start
             // 
-            this.dateTimePicker6.CustomFormat = "dddd dd/MM/yyyy ";
-            this.dateTimePicker6.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker6.Location = new System.Drawing.Point(13, 115);
-            this.dateTimePicker6.Name = "dateTimePicker6";
-            this.dateTimePicker6.Size = new System.Drawing.Size(213, 22);
-            this.dateTimePicker6.TabIndex = 30;
+            this.sub2start.CustomFormat = "hh:mm";
+            this.sub2start.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.sub2start.Location = new System.Drawing.Point(13, 188);
+            this.sub2start.Name = "sub2start";
+            this.sub2start.Size = new System.Drawing.Size(213, 22);
+            this.sub2start.TabIndex = 31;
             // 
-            // dateTimePicker4
+            // sub3start
             // 
-            this.dateTimePicker4.CustomFormat = "dddd dd/MM/yyyy ";
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker4.Location = new System.Drawing.Point(13, 115);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(213, 22);
-            this.dateTimePicker4.TabIndex = 30;
+            this.sub3start.CustomFormat = "hh:mm";
+            this.sub3start.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.sub3start.Location = new System.Drawing.Point(13, 188);
+            this.sub3start.Name = "sub3start";
+            this.sub3start.Size = new System.Drawing.Size(213, 22);
+            this.sub3start.TabIndex = 32;
             // 
-            // dateTimePicker5
+            // sub2end
             // 
-            this.dateTimePicker5.CustomFormat = "dddd dd/MM/yyyy ";
-            this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker5.Location = new System.Drawing.Point(13, 115);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(213, 22);
-            this.dateTimePicker5.TabIndex = 30;
+            this.sub2end.CustomFormat = "hh:mm";
+            this.sub2end.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.sub2end.Location = new System.Drawing.Point(13, 256);
+            this.sub2end.Name = "sub2end";
+            this.sub2end.Size = new System.Drawing.Size(213, 22);
+            this.sub2end.TabIndex = 33;
             // 
-            // label27
+            // sub3end
             // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(14, 291);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(247, 34);
-            this.label27.TabIndex = 31;
-            this.label27.Text = "Enter subject names according to the \r\norder of dates";
+            this.sub3end.CustomFormat = "hh:mm";
+            this.sub3end.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.sub3end.Location = new System.Drawing.Point(13, 256);
+            this.sub3end.Name = "sub3end";
+            this.sub3end.Size = new System.Drawing.Size(213, 22);
+            this.sub3end.TabIndex = 34;
+            // 
+            // sub4start
+            // 
+            this.sub4start.CustomFormat = "hh:mm";
+            this.sub4start.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.sub4start.Location = new System.Drawing.Point(13, 188);
+            this.sub4start.Name = "sub4start";
+            this.sub4start.Size = new System.Drawing.Size(213, 22);
+            this.sub4start.TabIndex = 35;
+            // 
+            // sub4end
+            // 
+            this.sub4end.CustomFormat = "hh:mm";
+            this.sub4end.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.sub4end.Location = new System.Drawing.Point(13, 256);
+            this.sub4end.Name = "sub4end";
+            this.sub4end.Size = new System.Drawing.Size(213, 22);
+            this.sub4end.TabIndex = 36;
+            // 
+            // sub5start
+            // 
+            this.sub5start.CustomFormat = "hh:mm";
+            this.sub5start.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.sub5start.Location = new System.Drawing.Point(13, 188);
+            this.sub5start.Name = "sub5start";
+            this.sub5start.Size = new System.Drawing.Size(213, 22);
+            this.sub5start.TabIndex = 37;
+            // 
+            // sub5end
+            // 
+            this.sub5end.CustomFormat = "hh:mm";
+            this.sub5end.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.sub5end.Location = new System.Drawing.Point(13, 256);
+            this.sub5end.Name = "sub5end";
+            this.sub5end.Size = new System.Drawing.Size(213, 22);
+            this.sub5end.TabIndex = 38;
+            // 
+            // sub6start
+            // 
+            this.sub6start.CustomFormat = "hh:mm";
+            this.sub6start.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.sub6start.Location = new System.Drawing.Point(13, 188);
+            this.sub6start.Name = "sub6start";
+            this.sub6start.Size = new System.Drawing.Size(213, 22);
+            this.sub6start.TabIndex = 39;
+            // 
+            // sub6end
+            // 
+            this.sub6end.CustomFormat = "hh:mm";
+            this.sub6end.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.sub6end.Location = new System.Drawing.Point(13, 256);
+            this.sub6end.Name = "sub6end";
+            this.sub6end.Size = new System.Drawing.Size(213, 22);
+            this.sub6end.TabIndex = 40;
             // 
             // TimetableCreator
             // 
@@ -769,62 +793,62 @@ namespace ExamTimetableApp
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox sub1name;
         private System.Windows.Forms.Panel sub1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker sub1date;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox examtitle;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel sub2;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox sub2name;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel sub3;
-        private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox sub3name;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel sub5;
-        private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox sub5name;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel sub6;
-        private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox sub6name;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Panel sub4;
-        private System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.TextBox sub4name;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker6;
+        private System.Windows.Forms.DateTimePicker sub2date;
+        private System.Windows.Forms.DateTimePicker sub3date;
+        private System.Windows.Forms.DateTimePicker sub5date;
+        private System.Windows.Forms.DateTimePicker sub6date;
+        private System.Windows.Forms.DateTimePicker sub4date;
         private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.DateTimePicker sub1start;
+        private System.Windows.Forms.DateTimePicker sub1end;
+        private System.Windows.Forms.DateTimePicker sub2end;
+        private System.Windows.Forms.DateTimePicker sub2start;
+        private System.Windows.Forms.DateTimePicker sub3end;
+        private System.Windows.Forms.DateTimePicker sub3start;
+        private System.Windows.Forms.DateTimePicker sub5end;
+        private System.Windows.Forms.DateTimePicker sub5start;
+        private System.Windows.Forms.DateTimePicker sub6end;
+        private System.Windows.Forms.DateTimePicker sub6start;
+        private System.Windows.Forms.DateTimePicker sub4end;
+        private System.Windows.Forms.DateTimePicker sub4start;
     }
 }

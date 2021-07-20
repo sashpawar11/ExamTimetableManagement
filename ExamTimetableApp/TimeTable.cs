@@ -25,34 +25,27 @@ namespace ExamTimetableApp
             using( var bmp = new Bitmap(timetablepanel.Width, timetablepanel.Height))
             {
                 timetablepanel.DrawToBitmap(bmp, new Rectangle(0, 0, bmp.Width, bmp.Height));
-                bmp.Save(@"savedtimetables/testtimetable.jpg");
+                bmp.Save(@"savedtimetables/jpg/examtimetable.jpg");
             }
-            
-            
-          
 
-            OpenFileDialog dlg = new OpenFileDialog();
 
-            dlg.InitialDirectory = @"savedtimetables";
-            dlg.Filter = "JPEG files (*.jpg)|*.jpg|All files (*.*)|*.*";
-            dlg.Multiselect = true;
 
-            if (dlg.ShowDialog() == DialogResult.OK)
-            {
-                PdfDocument document = new PdfDocument();
-                document.Info.Title = "Examination Timetable";
-
-                foreach (string fileSpec in dlg.FileNames)
-                {
-                    PdfPage page = document.AddPage();
-                    page.Width = timetablepanel.Width;
-                    page.Height = timetablepanel.Height;
-                    XGraphics gfx = XGraphics.FromPdfPage(page);
-                    DrawImage(gfx, fileSpec, 0, 0, (int)page.Width, (int)page.Height); 
-                }
-                if (document.PageCount > 0) document.Save(@"savedtimetables/testtimetable.pdf");
-            }
+            string source  = @"savedtimetables/jpg/examtimetable.jpg";
+            string destination = @"savedtimetables/pdf/examtimetable.pdf";
+            PdfDocument doc = new PdfDocument();
+            PdfPage page = doc.AddPage();
+            page.Width = timetablepanel.Width;
+            page.Height = timetablepanel.Height;
+            XGraphics xgr = XGraphics.FromPdfPage(page);
+            XImage img = XImage.FromFile(source);
+            xgr.DrawImage(img, 0, 0, (int)page.Width, (int)page.Height);
+            doc.Save(destination);
+            doc.Close();
+            MessageBox.Show("Timetable Successfully Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+      
+           
         }
+    
 
         void DrawImage(XGraphics gfx, string jpegSamplePath, int x, int y, int width, int height)
         {

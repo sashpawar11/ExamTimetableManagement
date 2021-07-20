@@ -30,12 +30,12 @@ namespace ExamTimetableApp
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.yearBox = new System.Windows.Forms.ComboBox();
             this.departmentBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +46,7 @@ namespace ExamTimetableApp
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.yearBox);
             this.panel1.Controls.Add(this.departmentBox);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -54,6 +54,16 @@ namespace ExamTimetableApp
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(630, 385);
             this.panel1.TabIndex = 10;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(252, 271);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(296, 37);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "Update Timetable";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -65,18 +75,18 @@ namespace ExamTimetableApp
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // comboBox1
+            // yearBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.yearBox.FormattingEnabled = true;
+            this.yearBox.Items.AddRange(new object[] {
             "FE",
             "SE",
             "TE",
             "BE"});
-            this.comboBox1.Location = new System.Drawing.Point(252, 128);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(296, 24);
-            this.comboBox1.TabIndex = 13;
+            this.yearBox.Location = new System.Drawing.Point(252, 128);
+            this.yearBox.Name = "yearBox";
+            this.yearBox.Size = new System.Drawing.Size(296, 24);
+            this.yearBox.TabIndex = 13;
             // 
             // departmentBox
             // 
@@ -110,15 +120,6 @@ namespace ExamTimetableApp
             this.label1.TabIndex = 10;
             this.label1.Text = "Department :";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(252, 271);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(296, 37);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Update Timetable";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // AdminSelector
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -128,6 +129,7 @@ namespace ExamTimetableApp
             this.Name = "AdminSelector";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrator Controls";
+            this.Load += new System.EventHandler(this.AdminSelector_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -138,7 +140,7 @@ namespace ExamTimetableApp
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox yearBox;
         private System.Windows.Forms.ComboBox departmentBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
