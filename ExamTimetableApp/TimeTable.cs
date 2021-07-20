@@ -19,6 +19,8 @@ namespace ExamTimetableApp
         {
             InitializeComponent();
         }
+        public static string departmentName = AdminSelector.departmentName;
+        public static string year = AdminSelector.year;
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -53,5 +55,9 @@ namespace ExamTimetableApp
             gfx.DrawImage(image, x, y, width, height);
         }
 
+        private void TimeTable_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

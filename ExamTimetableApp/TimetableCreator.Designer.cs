@@ -643,109 +643,121 @@ namespace ExamTimetableApp
             // 
             // sub1start
             // 
-            this.sub1start.CustomFormat = "hh:mm";
+            this.sub1start.CustomFormat = "HH:mm";
             this.sub1start.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.sub1start.Location = new System.Drawing.Point(13, 188);
             this.sub1start.Name = "sub1start";
+            this.sub1start.ShowUpDown = true;
             this.sub1start.Size = new System.Drawing.Size(213, 22);
             this.sub1start.TabIndex = 29;
             // 
             // sub1end
             // 
-            this.sub1end.CustomFormat = "hh:mm";
+            this.sub1end.CustomFormat = "HH:mm";
             this.sub1end.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.sub1end.Location = new System.Drawing.Point(14, 256);
             this.sub1end.Name = "sub1end";
+            this.sub1end.ShowUpDown = true;
             this.sub1end.Size = new System.Drawing.Size(213, 22);
             this.sub1end.TabIndex = 30;
             // 
             // sub2start
             // 
-            this.sub2start.CustomFormat = "hh:mm";
+            this.sub2start.CustomFormat = "HH:mm";
             this.sub2start.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.sub2start.Location = new System.Drawing.Point(13, 188);
             this.sub2start.Name = "sub2start";
+            this.sub2start.ShowUpDown = true;
             this.sub2start.Size = new System.Drawing.Size(213, 22);
             this.sub2start.TabIndex = 31;
             // 
             // sub3start
             // 
-            this.sub3start.CustomFormat = "hh:mm";
+            this.sub3start.CustomFormat = "HH:mm";
             this.sub3start.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.sub3start.Location = new System.Drawing.Point(13, 188);
             this.sub3start.Name = "sub3start";
+            this.sub3start.ShowUpDown = true;
             this.sub3start.Size = new System.Drawing.Size(213, 22);
             this.sub3start.TabIndex = 32;
             // 
             // sub2end
             // 
-            this.sub2end.CustomFormat = "hh:mm";
+            this.sub2end.CustomFormat = "HH:mm";
             this.sub2end.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.sub2end.Location = new System.Drawing.Point(13, 256);
             this.sub2end.Name = "sub2end";
+            this.sub2end.ShowUpDown = true;
             this.sub2end.Size = new System.Drawing.Size(213, 22);
             this.sub2end.TabIndex = 33;
             // 
             // sub3end
             // 
-            this.sub3end.CustomFormat = "hh:mm";
+            this.sub3end.CustomFormat = "HH:mm";
             this.sub3end.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.sub3end.Location = new System.Drawing.Point(13, 256);
             this.sub3end.Name = "sub3end";
+            this.sub3end.ShowUpDown = true;
             this.sub3end.Size = new System.Drawing.Size(213, 22);
             this.sub3end.TabIndex = 34;
             // 
             // sub4start
             // 
-            this.sub4start.CustomFormat = "hh:mm";
+            this.sub4start.CustomFormat = "HH:mm";
             this.sub4start.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.sub4start.Location = new System.Drawing.Point(13, 188);
             this.sub4start.Name = "sub4start";
+            this.sub4start.ShowUpDown = true;
             this.sub4start.Size = new System.Drawing.Size(213, 22);
             this.sub4start.TabIndex = 35;
             // 
             // sub4end
             // 
-            this.sub4end.CustomFormat = "hh:mm";
+            this.sub4end.CustomFormat = "HH:mm";
             this.sub4end.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.sub4end.Location = new System.Drawing.Point(13, 256);
             this.sub4end.Name = "sub4end";
+            this.sub4end.ShowUpDown = true;
             this.sub4end.Size = new System.Drawing.Size(213, 22);
             this.sub4end.TabIndex = 36;
             // 
             // sub5start
             // 
-            this.sub5start.CustomFormat = "hh:mm";
+            this.sub5start.CustomFormat = "HH:mm";
             this.sub5start.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.sub5start.Location = new System.Drawing.Point(13, 188);
             this.sub5start.Name = "sub5start";
+            this.sub5start.ShowUpDown = true;
             this.sub5start.Size = new System.Drawing.Size(213, 22);
             this.sub5start.TabIndex = 37;
             // 
             // sub5end
             // 
-            this.sub5end.CustomFormat = "hh:mm";
+            this.sub5end.CustomFormat = "HH:mm";
             this.sub5end.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.sub5end.Location = new System.Drawing.Point(13, 256);
             this.sub5end.Name = "sub5end";
+            this.sub5end.ShowUpDown = true;
             this.sub5end.Size = new System.Drawing.Size(213, 22);
             this.sub5end.TabIndex = 38;
             // 
             // sub6start
             // 
-            this.sub6start.CustomFormat = "hh:mm";
+            this.sub6start.CustomFormat = "HH:mm";
             this.sub6start.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.sub6start.Location = new System.Drawing.Point(13, 188);
             this.sub6start.Name = "sub6start";
+            this.sub6start.ShowUpDown = true;
             this.sub6start.Size = new System.Drawing.Size(213, 22);
             this.sub6start.TabIndex = 39;
             // 
             // sub6end
             // 
-            this.sub6end.CustomFormat = "hh:mm";
+            this.sub6end.CustomFormat = "HH:mm";
             this.sub6end.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.sub6end.Location = new System.Drawing.Point(13, 256);
             this.sub6end.Name = "sub6end";
+            this.sub6end.ShowUpDown = true;
             this.sub6end.Size = new System.Drawing.Size(213, 22);
             this.sub6end.TabIndex = 40;
             // 

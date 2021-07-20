@@ -98,6 +98,7 @@ namespace ExamTimetableApp
             sub5.Hide();
             sub6.Hide();
 
+           
         }
 
         private void generateTimetable()
