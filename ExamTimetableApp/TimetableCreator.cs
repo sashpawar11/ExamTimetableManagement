@@ -21,8 +21,8 @@ namespace ExamTimetableApp
         public static string dept = Navigation.departmentName;
         public static string yr = Navigation.year;
         public static int numberofSubjects;
-        public static string connectionString= @"provider = Microsoft.ACE.OLEDB.12.0; 
-                            Extended Properties = 'Excel 8.0'";
+        //public static string connectionString= @"provider = Microsoft.ACE.OLEDB.12.0; 
+        //                    Extended Properties = 'Excel 8.0'";
 
 
 
@@ -86,9 +86,10 @@ namespace ExamTimetableApp
             {
                 if (dept == "Computer Engineering")
                 {
-                    connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
+                    string connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
                             Data source = D:\timetabledatabase\ComputerEngineering.xlsx; 
                             Extended Properties = 'Excel 8.0'";
+
                     OleDbConnection odb= new OleDbConnection(connectionString);
                     
 
@@ -96,7 +97,7 @@ namespace ExamTimetableApp
                 }
                 if (dept == "Civil Engineering")
                 {
-                    connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
+                   string connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
                             Data source = D:\timetabledatabase\CivilEngineering.xlsx; 
                             Extended Properties = 'Excel 8.0'";
                     OleDbConnection odb = new OleDbConnection(connectionString);
@@ -105,7 +106,7 @@ namespace ExamTimetableApp
                 }
                 if (dept == "Mechanical Engineering")
                 {
-                    connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
+                    string connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
                             Data source = D:\timetabledatabase\MechanicalEngineering.xlsx; 
                             Extended Properties = 'Excel 8.0'";
                     OleDbConnection odb = new OleDbConnection(connectionString);
@@ -115,7 +116,7 @@ namespace ExamTimetableApp
                 }
                 if (dept == "Electronics & Telecommunication Engineering")
                 {
-                    connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
+                    string connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
                             Data source = D:\timetabledatabase\Electronics&TelecommunicationEngineering.xlsx; 
                             Extended Properties = 'Excel 8.0'";
                     OleDbConnection odb = new OleDbConnection(connectionString);
@@ -125,7 +126,7 @@ namespace ExamTimetableApp
                 }
                 if (dept == "Science & Humanities")
                 {
-                    connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
+                    string connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
                             Data source = D:\timetabledatabase\Science&Humanities.xlsx; 
                             Extended Properties = 'Excel 8.0'";
                     OleDbConnection odb = new OleDbConnection(connectionString);
