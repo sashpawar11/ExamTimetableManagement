@@ -91,6 +91,7 @@ namespace ExamTimetableApp
                             Extended Properties = 'Excel 8.0'";
 
                     OleDbConnection odb= new OleDbConnection(connectionString);
+                    generateTimetable(odb);
                     
 
 
