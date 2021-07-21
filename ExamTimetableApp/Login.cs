@@ -17,6 +17,8 @@ namespace ExamTimetableApp
             InitializeComponent();
         }
 
+        public static bool admin = false;
+        
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -27,10 +29,16 @@ namespace ExamTimetableApp
 
         private void button2_Click(object sender, EventArgs e)
         {
+            admin = false;
             this.Hide();
-            StudentSelectionMenu sm= new StudentSelectionMenu();
+            Navigation sm= new Navigation();
             sm.Closed += (s, args) => this.Close();
             sm.Show();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -19,16 +19,19 @@ namespace ExamTimetableApp
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             if ((username.Text == "dbce" ) &&  (password.Text == "dbcegoa123"))
             {
-                
+                Login.admin = true;
                 this.Hide();
-                AdminSelector asr = new AdminSelector();
+                Navigation asr = new Navigation();
                 asr.Closed += (s, args) => this.Close();
                 asr.Show();
+                
             }
             else
             {
+                Login.admin = false;
                 MessageBox.Show("Invalid Username & Password. Please Retry!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }

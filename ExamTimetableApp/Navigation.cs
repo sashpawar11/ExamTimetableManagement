@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace ExamTimetableApp
 {
-    public partial class AdminSelector : Form
+    public partial class Navigation : Form
     {
-        public AdminSelector()
+        public Navigation()
         {
             InitializeComponent();
         }
@@ -22,8 +22,9 @@ namespace ExamTimetableApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            departmentName = departmentBox.Text.ToString();
-            year = yearBox.Text.ToString();
+            departmentName = departmentBox.SelectedItem.ToString();
+            year = yearBox.SelectedItem.ToString();
+            
             this.Hide();
             TimetableCreator tc = new TimetableCreator();
             tc.Closed += (s, args) => this.Close();
@@ -38,9 +39,26 @@ namespace ExamTimetableApp
 
         }
 
-        private void AdminSelector_Load(object sender, EventArgs e)
+        private void Navigation_Load(object sender, EventArgs e)
         {
+            bool adminaccess = Login.admin;
+            opentable.Show();
+            createbtn.Hide();
+            updatebtn.Hide();
+            if(adminaccess)
+            {
+                createbtn.Show();
+                updatebtn.Show();
+            }
+          
+        }
 
+        private void opentable_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TimeTable tb = new TimeTable();
+            tb.Closed += (s, args) => this.Close();
+            tb.Show();
         }
     }
 }

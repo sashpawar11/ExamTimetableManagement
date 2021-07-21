@@ -68,11 +68,11 @@
     <Compile Include="AdminLoginForm.Designer.cs">
       <DependentUpon>AdminLoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminSelector.cs">
+    <Compile Include="Navigation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminSelector.Designer.cs">
-      <DependentUpon>AdminSelector.cs</DependentUpon>
+    <Compile Include="Navigation.Designer.cs">
+      <DependentUpon>Navigation.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -82,12 +82,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StudentSelectionMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StudentSelectionMenu.Designer.cs">
-      <DependentUpon>StudentSelectionMenu.cs</DependentUpon>
-    </Compile>
     <Compile Include="TimeTable.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,8 +97,8 @@
     <EmbeddedResource Include="AdminLoginForm.resx">
       <DependentUpon>AdminLoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminSelector.resx">
-      <DependentUpon>AdminSelector.cs</DependentUpon>
+    <EmbeddedResource Include="Navigation.resx">
+      <DependentUpon>Navigation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -118,9 +112,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="StudentSelectionMenu.resx">
-      <DependentUpon>StudentSelectionMenu.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="TimeTable.resx">
       <DependentUpon>TimeTable.cs</DependentUpon>
     </EmbeddedResource>

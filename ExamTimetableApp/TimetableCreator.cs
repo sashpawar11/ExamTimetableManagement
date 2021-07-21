@@ -18,10 +18,13 @@ namespace ExamTimetableApp
             InitializeComponent();
         }
 
-        public static string dept = AdminSelector.departmentName;
-        public static string yr = AdminSelector.year;
+        public static string dept = Navigation.departmentName;
+        public static string yr = Navigation.year;
         public static int numberofSubjects;
-        public static string connectionString;
+        public static string connectionString= @"provider = Microsoft.ACE.OLEDB.12.0; 
+                            Extended Properties = 'Excel 8.0'";
+
+
 
         private void numSub_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -81,7 +84,55 @@ namespace ExamTimetableApp
             }
             else
             {
-                generateTimetable();
+                if (dept == "Computer Engineering")
+                {
+                    connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
+                            Data source = D:\timetabledatabase\ComputerEngineering.xlsx; 
+                            Extended Properties = 'Excel 8.0'";
+                    OleDbConnection odb= new OleDbConnection(connectionString);
+                    
+
+
+                }
+                if (dept == "Civil Engineering")
+                {
+                    connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
+                            Data source = D:\timetabledatabase\CivilEngineering.xlsx; 
+                            Extended Properties = 'Excel 8.0'";
+                    OleDbConnection odb = new OleDbConnection(connectionString);
+                    generateTimetable(odb);
+
+                }
+                if (dept == "Mechanical Engineering")
+                {
+                    connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
+                            Data source = D:\timetabledatabase\MechanicalEngineering.xlsx; 
+                            Extended Properties = 'Excel 8.0'";
+                    OleDbConnection odb = new OleDbConnection(connectionString);
+                    generateTimetable(odb);
+
+
+                }
+                if (dept == "Electronics & Telecommunication Engineering")
+                {
+                    connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
+                            Data source = D:\timetabledatabase\Electronics&TelecommunicationEngineering.xlsx; 
+                            Extended Properties = 'Excel 8.0'";
+                    OleDbConnection odb = new OleDbConnection(connectionString);
+                    generateTimetable(odb);
+
+
+                }
+                if (dept == "Science & Humanities")
+                {
+                    connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
+                            Data source = D:\timetabledatabase\Science&Humanities.xlsx; 
+                            Extended Properties = 'Excel 8.0'";
+                    OleDbConnection odb = new OleDbConnection(connectionString);
+                    generateTimetable(odb);
+
+                }
+                
                 this.Hide();
                 TimeTable tm = new TimeTable();
                 tm.Closed += (s, args) => this.Close();
@@ -91,60 +142,32 @@ namespace ExamTimetableApp
 
         private void TimetableCreator_Load(object sender, EventArgs e)
         {
+            
+
             sub1.Hide();
             sub2.Hide();
             sub3.Hide();
             sub4.Hide();
             sub5.Hide();
             sub6.Hide();
+          
 
-           
+
+
         }
 
-        private void generateTimetable()
+        private void generateTimetable(OleDbConnection odb)
         {
             numberofSubjects = int.Parse(numSub.Text);
-            if ((dept == "Computer Engineering"))
-            {
-                connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
-                            Data source = D:\timetabledatabase\ComputerEngineering.xlsx; 
-                            Extended Properties = 'Excel 8.0'";
-
-            }
-            if ((dept == "Civil Engineering"))
-            {
-                connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
-                            Data source = D:\timetabledatabase\CivilEngineering.xlsx; 
-                            Extended Properties = 'Excel 8.0'";
-
-            }
-            if ((dept == "Mechanical Engineering"))
-            {
-                connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
-                            Data source = D:\timetabledatabase\MechanicalEngineering.xlsx; 
-                            Extended Properties = 'Excel 8.0'";
-
-            }
-            if ((dept == "Electronics & Telecommunication Engineering"))
-            {
-                connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
-                            Data source = D:\timetabledatabase\Electronics&TelecommunicationEngineering.xlsx; 
-                            Extended Properties = 'Excel 8.0'";
-
-            }
-            if ((dept == "Science & Humanities"))
-            {
-                connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
-                            Data source = D:\timetabledatabase\Science&Humanities.xlsx; 
-                            Extended Properties = 'Excel 8.0'";
-
-            }
-
-            OleDbConnection oleDbConnection = new OleDbConnection(connectionString);
-            oleDbConnection.Open();
+            
+            odb.Open();
             OleDbCommand cmd = new OleDbCommand();
-            cmd.Connection = oleDbConnection;
-            if ((yr == "FE"))
+            cmd.Connection = odb;
+            string headers = "INSERT INTO [DT$] ([Year], [Department], [ExamTitle], [NumSub]) VALUES('" + yr + "','" + dept + "','" + examtitle.Text + "','" + numberofSubjects + "')";
+            cmd.CommandText = headers;
+            cmd.ExecuteNonQuery();
+
+            if (yr == "FE")
             {
                 for (int i = 1; i <= numberofSubjects; i++)
                 {
@@ -223,7 +246,7 @@ namespace ExamTimetableApp
                 }
             }
 
-            if ((yr == "SE"))
+            if (yr == "SE")
             {
                 for (int i = 1; i <= numberofSubjects; i++)
                 {
@@ -302,7 +325,7 @@ namespace ExamTimetableApp
 
                 }
             }
-            if ((yr == "TE"))
+            if (yr == "TE")
             {
                 for (int i = 1; i <= numberofSubjects; i++)
                 {
@@ -381,7 +404,7 @@ namespace ExamTimetableApp
                 }
 
             }
-            if ((yr == "BE"))
+            if (yr == "BE")
             {
                 for (int i = 1; i <= numberofSubjects; i++)
                 {
@@ -460,7 +483,7 @@ namespace ExamTimetableApp
                 }
             }
 
-            oleDbConnection.Close();
+            odb.Close();
 
 
 

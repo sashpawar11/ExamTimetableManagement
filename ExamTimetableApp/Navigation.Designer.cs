@@ -1,7 +1,7 @@
 ﻿
 namespace ExamTimetableApp
 {
-    partial class AdminSelector
+    partial class Navigation
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,16 @@ namespace ExamTimetableApp
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.yearBox = new System.Windows.Forms.ComboBox();
             this.departmentBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.adminpanel = new System.Windows.Forms.Panel();
+            this.opentable = new System.Windows.Forms.Button();
+            this.updatebtn = new System.Windows.Forms.Button();
+            this.createbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.adminpanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -44,36 +47,17 @@ namespace ExamTimetableApp
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel1.Controls.Add(this.yearBox);
             this.panel1.Controls.Add(this.departmentBox);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.adminpanel);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(630, 385);
             this.panel1.TabIndex = 10;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(252, 271);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(296, 37);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Update Timetable";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(252, 196);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(296, 37);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Create Timetable";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // yearBox
             // 
@@ -114,24 +98,66 @@ namespace ExamTimetableApp
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(143, 81);
+            this.label1.Location = new System.Drawing.Point(143, 77);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 17);
             this.label1.TabIndex = 10;
             this.label1.Text = "Department :";
             // 
-            // AdminSelector
+            // adminpanel
+            // 
+            this.adminpanel.Controls.Add(this.opentable);
+            this.adminpanel.Controls.Add(this.updatebtn);
+            this.adminpanel.Controls.Add(this.createbtn);
+            this.adminpanel.Location = new System.Drawing.Point(252, 171);
+            this.adminpanel.Name = "adminpanel";
+            this.adminpanel.Size = new System.Drawing.Size(296, 151);
+            this.adminpanel.TabIndex = 17;
+            // 
+            // opentable
+            // 
+            this.opentable.Location = new System.Drawing.Point(0, 9);
+            this.opentable.Name = "opentable";
+            this.opentable.Size = new System.Drawing.Size(296, 37);
+            this.opentable.TabIndex = 16;
+            this.opentable.Text = "Open Timetable";
+            this.opentable.UseVisualStyleBackColor = true;
+            this.opentable.Click += new System.EventHandler(this.opentable_Click);
+            // 
+            // updatebtn
+            // 
+            this.updatebtn.Location = new System.Drawing.Point(0, 95);
+            this.updatebtn.Name = "updatebtn";
+            this.updatebtn.Size = new System.Drawing.Size(296, 37);
+            this.updatebtn.TabIndex = 15;
+            this.updatebtn.Text = "Update Timetable";
+            this.updatebtn.UseVisualStyleBackColor = true;
+            // 
+            // createbtn
+            // 
+            this.createbtn.Location = new System.Drawing.Point(0, 52);
+            this.createbtn.Name = "createbtn";
+            this.createbtn.Size = new System.Drawing.Size(296, 37);
+            this.createbtn.TabIndex = 14;
+            this.createbtn.Text = "Create Timetable";
+            this.createbtn.UseVisualStyleBackColor = true;
+            this.createbtn.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Navigation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(654, 409);
             this.Controls.Add(this.panel1);
-            this.Name = "AdminSelector";
+            this.Name = "Navigation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Administrator Controls";
-            this.Load += new System.EventHandler(this.AdminSelector_Load);
+            this.Text = "Navigation";
+            this.Load += new System.EventHandler(this.Navigation_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.adminpanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -139,11 +165,13 @@ namespace ExamTimetableApp
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button opentable;
         private System.Windows.Forms.ComboBox yearBox;
         private System.Windows.Forms.ComboBox departmentBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel adminpanel;
+        private System.Windows.Forms.Button updatebtn;
+        private System.Windows.Forms.Button createbtn;
     }
 }

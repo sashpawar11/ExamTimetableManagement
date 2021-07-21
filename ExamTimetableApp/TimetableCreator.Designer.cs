@@ -155,7 +155,7 @@ namespace ExamTimetableApp
             this.examtitle.Location = new System.Drawing.Point(25, 169);
             this.examtitle.Multiline = true;
             this.examtitle.Name = "examtitle";
-            this.examtitle.Size = new System.Drawing.Size(214, 22);
+            this.examtitle.Size = new System.Drawing.Size(214, 42);
             this.examtitle.TabIndex = 30;
             // 
             // button1
