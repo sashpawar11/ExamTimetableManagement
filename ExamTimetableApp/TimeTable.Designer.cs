@@ -156,10 +156,11 @@ namespace ExamTimetableApp
             this.timetablepanel.Controls.Add(this.yrtitle);
             this.timetablepanel.Controls.Add(this.sub1panel);
             this.timetablepanel.Controls.Add(this.daylabel);
-            this.timetablepanel.Location = new System.Drawing.Point(12, 73);
+            this.timetablepanel.Location = new System.Drawing.Point(9, 59);
+            this.timetablepanel.Margin = new System.Windows.Forms.Padding(2);
             this.timetablepanel.Name = "timetablepanel";
-            this.timetablepanel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.timetablepanel.Size = new System.Drawing.Size(1375, 784);
+            this.timetablepanel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 16);
+            this.timetablepanel.Size = new System.Drawing.Size(1031, 637);
             this.timetablepanel.TabIndex = 11;
             this.timetablepanel.Paint += new System.Windows.Forms.PaintEventHandler(this.timetablepanel_Paint);
             // 
@@ -167,9 +168,10 @@ namespace ExamTimetableApp
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(858, 178);
+            this.label9.Location = new System.Drawing.Point(644, 145);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(84, 24);
+            this.label9.Size = new System.Drawing.Size(67, 18);
             this.label9.TabIndex = 27;
             this.label9.Text = "Timings";
             // 
@@ -177,9 +179,10 @@ namespace ExamTimetableApp
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(559, 178);
+            this.label8.Location = new System.Drawing.Point(419, 145);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(80, 24);
+            this.label8.Size = new System.Drawing.Size(64, 18);
             this.label8.TabIndex = 26;
             this.label8.Text = "Subject";
             // 
@@ -191,18 +194,20 @@ namespace ExamTimetableApp
             this.sub6panel.Controls.Add(this.panel12);
             this.sub6panel.Controls.Add(this.panel24);
             this.sub6panel.Controls.Add(this.panel11);
-            this.sub6panel.Location = new System.Drawing.Point(64, 673);
+            this.sub6panel.Location = new System.Drawing.Point(48, 547);
+            this.sub6panel.Margin = new System.Windows.Forms.Padding(2);
             this.sub6panel.Name = "sub6panel";
-            this.sub6panel.Size = new System.Drawing.Size(1243, 88);
+            this.sub6panel.Size = new System.Drawing.Size(932, 72);
             this.sub6panel.TabIndex = 22;
             // 
             // panel23
             // 
             this.panel23.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel23.Controls.Add(this.sub6start);
-            this.panel23.Location = new System.Drawing.Point(796, 20);
+            this.panel23.Location = new System.Drawing.Point(597, 16);
+            this.panel23.Margin = new System.Windows.Forms.Padding(2);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(142, 49);
+            this.panel23.Size = new System.Drawing.Size(106, 40);
             this.panel23.TabIndex = 41;
             // 
             // sub6start
@@ -210,9 +215,10 @@ namespace ExamTimetableApp
             this.sub6start.AutoSize = true;
             this.sub6start.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub6start.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub6start.Location = new System.Drawing.Point(14, 16);
+            this.sub6start.Location = new System.Drawing.Point(10, 13);
+            this.sub6start.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub6start.Name = "sub6start";
-            this.sub6start.Size = new System.Drawing.Size(50, 18);
+            this.sub6start.Size = new System.Drawing.Size(41, 15);
             this.sub6start.TabIndex = 1;
             this.sub6start.Text = "label3";
             // 
@@ -220,9 +226,10 @@ namespace ExamTimetableApp
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(1002, 30);
+            this.label32.Location = new System.Drawing.Point(752, 24);
+            this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(17, 24);
+            this.label32.Size = new System.Drawing.Size(14, 18);
             this.label32.TabIndex = 43;
             this.label32.Text = "-";
             // 
@@ -230,9 +237,10 @@ namespace ExamTimetableApp
             // 
             this.panel12.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel12.Controls.Add(this.sub6name);
-            this.panel12.Location = new System.Drawing.Point(365, 20);
+            this.panel12.Location = new System.Drawing.Point(274, 16);
+            this.panel12.Margin = new System.Windows.Forms.Padding(2);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(399, 49);
+            this.panel12.Size = new System.Drawing.Size(299, 40);
             this.panel12.TabIndex = 7;
             // 
             // sub6name
@@ -240,9 +248,10 @@ namespace ExamTimetableApp
             this.sub6name.AutoSize = true;
             this.sub6name.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub6name.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub6name.Location = new System.Drawing.Point(14, 16);
+            this.sub6name.Location = new System.Drawing.Point(10, 13);
+            this.sub6name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub6name.Name = "sub6name";
-            this.sub6name.Size = new System.Drawing.Size(50, 18);
+            this.sub6name.Size = new System.Drawing.Size(41, 15);
             this.sub6name.TabIndex = 1;
             this.sub6name.Text = "label3";
             // 
@@ -250,9 +259,10 @@ namespace ExamTimetableApp
             // 
             this.panel24.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel24.Controls.Add(this.sub6end);
-            this.panel24.Location = new System.Drawing.Point(1086, 20);
+            this.panel24.Location = new System.Drawing.Point(814, 16);
+            this.panel24.Margin = new System.Windows.Forms.Padding(2);
             this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(142, 49);
+            this.panel24.Size = new System.Drawing.Size(106, 40);
             this.panel24.TabIndex = 42;
             // 
             // sub6end
@@ -260,9 +270,10 @@ namespace ExamTimetableApp
             this.sub6end.AutoSize = true;
             this.sub6end.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub6end.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub6end.Location = new System.Drawing.Point(14, 16);
+            this.sub6end.Location = new System.Drawing.Point(10, 13);
+            this.sub6end.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub6end.Name = "sub6end";
-            this.sub6end.Size = new System.Drawing.Size(50, 18);
+            this.sub6end.Size = new System.Drawing.Size(41, 15);
             this.sub6end.TabIndex = 1;
             this.sub6end.Text = "label3";
             // 
@@ -270,9 +281,10 @@ namespace ExamTimetableApp
             // 
             this.panel11.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel11.Controls.Add(this.sub6date);
-            this.panel11.Location = new System.Drawing.Point(14, 20);
+            this.panel11.Location = new System.Drawing.Point(10, 16);
+            this.panel11.Margin = new System.Windows.Forms.Padding(2);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(332, 49);
+            this.panel11.Size = new System.Drawing.Size(249, 40);
             this.panel11.TabIndex = 0;
             // 
             // sub6date
@@ -280,9 +292,10 @@ namespace ExamTimetableApp
             this.sub6date.AutoSize = true;
             this.sub6date.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub6date.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub6date.Location = new System.Drawing.Point(14, 16);
+            this.sub6date.Location = new System.Drawing.Point(10, 13);
+            this.sub6date.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub6date.Name = "sub6date";
-            this.sub6date.Size = new System.Drawing.Size(50, 18);
+            this.sub6date.Size = new System.Drawing.Size(41, 15);
             this.sub6date.TabIndex = 1;
             this.sub6date.Text = "label7";
             // 
@@ -294,18 +307,20 @@ namespace ExamTimetableApp
             this.sub5panel.Controls.Add(this.panel10);
             this.sub5panel.Controls.Add(this.panel22);
             this.sub5panel.Controls.Add(this.panel9);
-            this.sub5panel.Location = new System.Drawing.Point(64, 579);
+            this.sub5panel.Location = new System.Drawing.Point(48, 470);
+            this.sub5panel.Margin = new System.Windows.Forms.Padding(2);
             this.sub5panel.Name = "sub5panel";
-            this.sub5panel.Size = new System.Drawing.Size(1243, 88);
+            this.sub5panel.Size = new System.Drawing.Size(932, 72);
             this.sub5panel.TabIndex = 21;
             // 
             // panel21
             // 
             this.panel21.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel21.Controls.Add(this.sub5start);
-            this.panel21.Location = new System.Drawing.Point(796, 20);
+            this.panel21.Location = new System.Drawing.Point(597, 16);
+            this.panel21.Margin = new System.Windows.Forms.Padding(2);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(142, 49);
+            this.panel21.Size = new System.Drawing.Size(106, 40);
             this.panel21.TabIndex = 38;
             // 
             // sub5start
@@ -313,9 +328,10 @@ namespace ExamTimetableApp
             this.sub5start.AutoSize = true;
             this.sub5start.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub5start.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub5start.Location = new System.Drawing.Point(14, 16);
+            this.sub5start.Location = new System.Drawing.Point(10, 13);
+            this.sub5start.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub5start.Name = "sub5start";
-            this.sub5start.Size = new System.Drawing.Size(50, 18);
+            this.sub5start.Size = new System.Drawing.Size(41, 15);
             this.sub5start.TabIndex = 1;
             this.sub5start.Text = "label3";
             // 
@@ -323,9 +339,10 @@ namespace ExamTimetableApp
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(1002, 30);
+            this.label29.Location = new System.Drawing.Point(752, 24);
+            this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(17, 24);
+            this.label29.Size = new System.Drawing.Size(14, 18);
             this.label29.TabIndex = 40;
             this.label29.Text = "-";
             // 
@@ -333,9 +350,10 @@ namespace ExamTimetableApp
             // 
             this.panel10.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel10.Controls.Add(this.sub5name);
-            this.panel10.Location = new System.Drawing.Point(365, 20);
+            this.panel10.Location = new System.Drawing.Point(274, 16);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(399, 49);
+            this.panel10.Size = new System.Drawing.Size(299, 40);
             this.panel10.TabIndex = 6;
             // 
             // sub5name
@@ -343,9 +361,10 @@ namespace ExamTimetableApp
             this.sub5name.AutoSize = true;
             this.sub5name.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub5name.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub5name.Location = new System.Drawing.Point(14, 16);
+            this.sub5name.Location = new System.Drawing.Point(10, 13);
+            this.sub5name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub5name.Name = "sub5name";
-            this.sub5name.Size = new System.Drawing.Size(50, 18);
+            this.sub5name.Size = new System.Drawing.Size(41, 15);
             this.sub5name.TabIndex = 1;
             this.sub5name.Text = "label3";
             // 
@@ -353,9 +372,10 @@ namespace ExamTimetableApp
             // 
             this.panel22.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel22.Controls.Add(this.sub5end);
-            this.panel22.Location = new System.Drawing.Point(1086, 20);
+            this.panel22.Location = new System.Drawing.Point(814, 16);
+            this.panel22.Margin = new System.Windows.Forms.Padding(2);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(142, 49);
+            this.panel22.Size = new System.Drawing.Size(106, 40);
             this.panel22.TabIndex = 39;
             // 
             // sub5end
@@ -363,9 +383,10 @@ namespace ExamTimetableApp
             this.sub5end.AutoSize = true;
             this.sub5end.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub5end.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub5end.Location = new System.Drawing.Point(14, 16);
+            this.sub5end.Location = new System.Drawing.Point(10, 13);
+            this.sub5end.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub5end.Name = "sub5end";
-            this.sub5end.Size = new System.Drawing.Size(50, 18);
+            this.sub5end.Size = new System.Drawing.Size(41, 15);
             this.sub5end.TabIndex = 1;
             this.sub5end.Text = "label3";
             // 
@@ -373,9 +394,10 @@ namespace ExamTimetableApp
             // 
             this.panel9.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel9.Controls.Add(this.sub5date);
-            this.panel9.Location = new System.Drawing.Point(14, 20);
+            this.panel9.Location = new System.Drawing.Point(10, 16);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(332, 49);
+            this.panel9.Size = new System.Drawing.Size(249, 40);
             this.panel9.TabIndex = 0;
             // 
             // sub5date
@@ -383,9 +405,10 @@ namespace ExamTimetableApp
             this.sub5date.AutoSize = true;
             this.sub5date.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub5date.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub5date.Location = new System.Drawing.Point(14, 16);
+            this.sub5date.Location = new System.Drawing.Point(10, 13);
+            this.sub5date.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub5date.Name = "sub5date";
-            this.sub5date.Size = new System.Drawing.Size(50, 18);
+            this.sub5date.Size = new System.Drawing.Size(41, 15);
             this.sub5date.TabIndex = 1;
             this.sub5date.Text = "label6";
             // 
@@ -397,18 +420,20 @@ namespace ExamTimetableApp
             this.sub4panel.Controls.Add(this.panel8);
             this.sub4panel.Controls.Add(this.panel20);
             this.sub4panel.Controls.Add(this.panel7);
-            this.sub4panel.Location = new System.Drawing.Point(64, 485);
+            this.sub4panel.Location = new System.Drawing.Point(48, 394);
+            this.sub4panel.Margin = new System.Windows.Forms.Padding(2);
             this.sub4panel.Name = "sub4panel";
-            this.sub4panel.Size = new System.Drawing.Size(1243, 88);
+            this.sub4panel.Size = new System.Drawing.Size(932, 72);
             this.sub4panel.TabIndex = 20;
             // 
             // panel19
             // 
             this.panel19.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel19.Controls.Add(this.sub4start);
-            this.panel19.Location = new System.Drawing.Point(796, 20);
+            this.panel19.Location = new System.Drawing.Point(597, 16);
+            this.panel19.Margin = new System.Windows.Forms.Padding(2);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(142, 49);
+            this.panel19.Size = new System.Drawing.Size(106, 40);
             this.panel19.TabIndex = 35;
             // 
             // sub4start
@@ -416,9 +441,10 @@ namespace ExamTimetableApp
             this.sub4start.AutoSize = true;
             this.sub4start.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub4start.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub4start.Location = new System.Drawing.Point(14, 16);
+            this.sub4start.Location = new System.Drawing.Point(10, 13);
+            this.sub4start.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub4start.Name = "sub4start";
-            this.sub4start.Size = new System.Drawing.Size(50, 18);
+            this.sub4start.Size = new System.Drawing.Size(41, 15);
             this.sub4start.TabIndex = 1;
             this.sub4start.Text = "label3";
             // 
@@ -426,9 +452,10 @@ namespace ExamTimetableApp
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(1002, 30);
+            this.label26.Location = new System.Drawing.Point(752, 24);
+            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(17, 24);
+            this.label26.Size = new System.Drawing.Size(14, 18);
             this.label26.TabIndex = 37;
             this.label26.Text = "-";
             // 
@@ -436,9 +463,10 @@ namespace ExamTimetableApp
             // 
             this.panel8.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel8.Controls.Add(this.sub4name);
-            this.panel8.Location = new System.Drawing.Point(365, 20);
+            this.panel8.Location = new System.Drawing.Point(274, 16);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(399, 49);
+            this.panel8.Size = new System.Drawing.Size(299, 40);
             this.panel8.TabIndex = 5;
             // 
             // sub4name
@@ -446,9 +474,10 @@ namespace ExamTimetableApp
             this.sub4name.AutoSize = true;
             this.sub4name.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub4name.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub4name.Location = new System.Drawing.Point(14, 16);
+            this.sub4name.Location = new System.Drawing.Point(10, 13);
+            this.sub4name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub4name.Name = "sub4name";
-            this.sub4name.Size = new System.Drawing.Size(50, 18);
+            this.sub4name.Size = new System.Drawing.Size(41, 15);
             this.sub4name.TabIndex = 1;
             this.sub4name.Text = "label3";
             // 
@@ -456,9 +485,10 @@ namespace ExamTimetableApp
             // 
             this.panel20.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel20.Controls.Add(this.sub4end);
-            this.panel20.Location = new System.Drawing.Point(1086, 20);
+            this.panel20.Location = new System.Drawing.Point(814, 16);
+            this.panel20.Margin = new System.Windows.Forms.Padding(2);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(142, 49);
+            this.panel20.Size = new System.Drawing.Size(106, 40);
             this.panel20.TabIndex = 36;
             // 
             // sub4end
@@ -466,9 +496,10 @@ namespace ExamTimetableApp
             this.sub4end.AutoSize = true;
             this.sub4end.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub4end.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub4end.Location = new System.Drawing.Point(14, 16);
+            this.sub4end.Location = new System.Drawing.Point(10, 13);
+            this.sub4end.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub4end.Name = "sub4end";
-            this.sub4end.Size = new System.Drawing.Size(50, 18);
+            this.sub4end.Size = new System.Drawing.Size(41, 15);
             this.sub4end.TabIndex = 1;
             this.sub4end.Text = "label3";
             // 
@@ -476,9 +507,10 @@ namespace ExamTimetableApp
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel7.Controls.Add(this.sub4date);
-            this.panel7.Location = new System.Drawing.Point(14, 20);
+            this.panel7.Location = new System.Drawing.Point(10, 16);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(332, 49);
+            this.panel7.Size = new System.Drawing.Size(249, 40);
             this.panel7.TabIndex = 0;
             // 
             // sub4date
@@ -486,9 +518,10 @@ namespace ExamTimetableApp
             this.sub4date.AutoSize = true;
             this.sub4date.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub4date.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub4date.Location = new System.Drawing.Point(14, 16);
+            this.sub4date.Location = new System.Drawing.Point(10, 13);
+            this.sub4date.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub4date.Name = "sub4date";
-            this.sub4date.Size = new System.Drawing.Size(50, 18);
+            this.sub4date.Size = new System.Drawing.Size(41, 15);
             this.sub4date.TabIndex = 1;
             this.sub4date.Text = "label5";
             // 
@@ -500,18 +533,20 @@ namespace ExamTimetableApp
             this.sub3panel.Controls.Add(this.panel6);
             this.sub3panel.Controls.Add(this.panel18);
             this.sub3panel.Controls.Add(this.panel5);
-            this.sub3panel.Location = new System.Drawing.Point(64, 393);
+            this.sub3panel.Location = new System.Drawing.Point(48, 319);
+            this.sub3panel.Margin = new System.Windows.Forms.Padding(2);
             this.sub3panel.Name = "sub3panel";
-            this.sub3panel.Size = new System.Drawing.Size(1243, 88);
+            this.sub3panel.Size = new System.Drawing.Size(932, 72);
             this.sub3panel.TabIndex = 19;
             // 
             // panel17
             // 
             this.panel17.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel17.Controls.Add(this.sub3start);
-            this.panel17.Location = new System.Drawing.Point(796, 20);
+            this.panel17.Location = new System.Drawing.Point(597, 16);
+            this.panel17.Margin = new System.Windows.Forms.Padding(2);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(142, 49);
+            this.panel17.Size = new System.Drawing.Size(106, 40);
             this.panel17.TabIndex = 32;
             // 
             // sub3start
@@ -519,9 +554,10 @@ namespace ExamTimetableApp
             this.sub3start.AutoSize = true;
             this.sub3start.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub3start.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub3start.Location = new System.Drawing.Point(14, 16);
+            this.sub3start.Location = new System.Drawing.Point(10, 13);
+            this.sub3start.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub3start.Name = "sub3start";
-            this.sub3start.Size = new System.Drawing.Size(50, 18);
+            this.sub3start.Size = new System.Drawing.Size(41, 15);
             this.sub3start.TabIndex = 1;
             this.sub3start.Text = "label3";
             // 
@@ -529,9 +565,10 @@ namespace ExamTimetableApp
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(1002, 30);
+            this.label23.Location = new System.Drawing.Point(752, 24);
+            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(17, 24);
+            this.label23.Size = new System.Drawing.Size(14, 18);
             this.label23.TabIndex = 34;
             this.label23.Text = "-";
             // 
@@ -539,9 +576,10 @@ namespace ExamTimetableApp
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel6.Controls.Add(this.sub3name);
-            this.panel6.Location = new System.Drawing.Point(365, 20);
+            this.panel6.Location = new System.Drawing.Point(274, 16);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(399, 49);
+            this.panel6.Size = new System.Drawing.Size(299, 40);
             this.panel6.TabIndex = 4;
             // 
             // sub3name
@@ -549,9 +587,10 @@ namespace ExamTimetableApp
             this.sub3name.AutoSize = true;
             this.sub3name.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub3name.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub3name.Location = new System.Drawing.Point(14, 16);
+            this.sub3name.Location = new System.Drawing.Point(10, 13);
+            this.sub3name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub3name.Name = "sub3name";
-            this.sub3name.Size = new System.Drawing.Size(50, 18);
+            this.sub3name.Size = new System.Drawing.Size(41, 15);
             this.sub3name.TabIndex = 1;
             this.sub3name.Text = "label3";
             // 
@@ -559,9 +598,10 @@ namespace ExamTimetableApp
             // 
             this.panel18.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel18.Controls.Add(this.sub3end);
-            this.panel18.Location = new System.Drawing.Point(1086, 20);
+            this.panel18.Location = new System.Drawing.Point(814, 16);
+            this.panel18.Margin = new System.Windows.Forms.Padding(2);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(142, 49);
+            this.panel18.Size = new System.Drawing.Size(106, 40);
             this.panel18.TabIndex = 33;
             // 
             // sub3end
@@ -569,9 +609,10 @@ namespace ExamTimetableApp
             this.sub3end.AutoSize = true;
             this.sub3end.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub3end.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub3end.Location = new System.Drawing.Point(14, 16);
+            this.sub3end.Location = new System.Drawing.Point(10, 13);
+            this.sub3end.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub3end.Name = "sub3end";
-            this.sub3end.Size = new System.Drawing.Size(50, 18);
+            this.sub3end.Size = new System.Drawing.Size(41, 15);
             this.sub3end.TabIndex = 1;
             this.sub3end.Text = "label3";
             // 
@@ -579,9 +620,10 @@ namespace ExamTimetableApp
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel5.Controls.Add(this.sub3date);
-            this.panel5.Location = new System.Drawing.Point(14, 20);
+            this.panel5.Location = new System.Drawing.Point(10, 16);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(332, 49);
+            this.panel5.Size = new System.Drawing.Size(249, 40);
             this.panel5.TabIndex = 0;
             // 
             // sub3date
@@ -589,9 +631,10 @@ namespace ExamTimetableApp
             this.sub3date.AutoSize = true;
             this.sub3date.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub3date.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub3date.Location = new System.Drawing.Point(14, 16);
+            this.sub3date.Location = new System.Drawing.Point(10, 13);
+            this.sub3date.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub3date.Name = "sub3date";
-            this.sub3date.Size = new System.Drawing.Size(50, 18);
+            this.sub3date.Size = new System.Drawing.Size(41, 15);
             this.sub3date.TabIndex = 1;
             this.sub3date.Text = "label4";
             // 
@@ -603,18 +646,20 @@ namespace ExamTimetableApp
             this.sub2panel.Controls.Add(this.panel4);
             this.sub2panel.Controls.Add(this.panel16);
             this.sub2panel.Controls.Add(this.panel3);
-            this.sub2panel.Location = new System.Drawing.Point(64, 303);
+            this.sub2panel.Location = new System.Drawing.Point(48, 246);
+            this.sub2panel.Margin = new System.Windows.Forms.Padding(2);
             this.sub2panel.Name = "sub2panel";
-            this.sub2panel.Size = new System.Drawing.Size(1243, 88);
+            this.sub2panel.Size = new System.Drawing.Size(932, 72);
             this.sub2panel.TabIndex = 18;
             // 
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel15.Controls.Add(this.sub2start);
-            this.panel15.Location = new System.Drawing.Point(796, 20);
+            this.panel15.Location = new System.Drawing.Point(597, 16);
+            this.panel15.Margin = new System.Windows.Forms.Padding(2);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(142, 49);
+            this.panel15.Size = new System.Drawing.Size(106, 40);
             this.panel15.TabIndex = 29;
             // 
             // sub2start
@@ -622,9 +667,10 @@ namespace ExamTimetableApp
             this.sub2start.AutoSize = true;
             this.sub2start.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub2start.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub2start.Location = new System.Drawing.Point(14, 16);
+            this.sub2start.Location = new System.Drawing.Point(10, 13);
+            this.sub2start.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub2start.Name = "sub2start";
-            this.sub2start.Size = new System.Drawing.Size(50, 18);
+            this.sub2start.Size = new System.Drawing.Size(41, 15);
             this.sub2start.TabIndex = 1;
             this.sub2start.Text = "label3";
             // 
@@ -632,9 +678,10 @@ namespace ExamTimetableApp
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(1002, 30);
+            this.label20.Location = new System.Drawing.Point(752, 24);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(17, 24);
+            this.label20.Size = new System.Drawing.Size(14, 18);
             this.label20.TabIndex = 31;
             this.label20.Text = "-";
             // 
@@ -642,9 +689,10 @@ namespace ExamTimetableApp
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel4.Controls.Add(this.sub2name);
-            this.panel4.Location = new System.Drawing.Point(365, 20);
+            this.panel4.Location = new System.Drawing.Point(274, 16);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(399, 49);
+            this.panel4.Size = new System.Drawing.Size(299, 40);
             this.panel4.TabIndex = 3;
             // 
             // sub2name
@@ -652,9 +700,10 @@ namespace ExamTimetableApp
             this.sub2name.AutoSize = true;
             this.sub2name.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub2name.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub2name.Location = new System.Drawing.Point(14, 16);
+            this.sub2name.Location = new System.Drawing.Point(10, 13);
+            this.sub2name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub2name.Name = "sub2name";
-            this.sub2name.Size = new System.Drawing.Size(50, 18);
+            this.sub2name.Size = new System.Drawing.Size(41, 15);
             this.sub2name.TabIndex = 1;
             this.sub2name.Text = "label3";
             // 
@@ -662,9 +711,10 @@ namespace ExamTimetableApp
             // 
             this.panel16.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel16.Controls.Add(this.sub2end);
-            this.panel16.Location = new System.Drawing.Point(1086, 20);
+            this.panel16.Location = new System.Drawing.Point(814, 16);
+            this.panel16.Margin = new System.Windows.Forms.Padding(2);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(142, 49);
+            this.panel16.Size = new System.Drawing.Size(106, 40);
             this.panel16.TabIndex = 30;
             // 
             // sub2end
@@ -672,9 +722,10 @@ namespace ExamTimetableApp
             this.sub2end.AutoSize = true;
             this.sub2end.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub2end.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub2end.Location = new System.Drawing.Point(14, 16);
+            this.sub2end.Location = new System.Drawing.Point(10, 13);
+            this.sub2end.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub2end.Name = "sub2end";
-            this.sub2end.Size = new System.Drawing.Size(50, 18);
+            this.sub2end.Size = new System.Drawing.Size(41, 15);
             this.sub2end.TabIndex = 1;
             this.sub2end.Text = "label3";
             // 
@@ -682,9 +733,10 @@ namespace ExamTimetableApp
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel3.Controls.Add(this.sub2date);
-            this.panel3.Location = new System.Drawing.Point(14, 20);
+            this.panel3.Location = new System.Drawing.Point(10, 16);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(332, 49);
+            this.panel3.Size = new System.Drawing.Size(249, 40);
             this.panel3.TabIndex = 0;
             // 
             // sub2date
@@ -692,9 +744,10 @@ namespace ExamTimetableApp
             this.sub2date.AutoSize = true;
             this.sub2date.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub2date.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub2date.Location = new System.Drawing.Point(14, 16);
+            this.sub2date.Location = new System.Drawing.Point(10, 13);
+            this.sub2date.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub2date.Name = "sub2date";
-            this.sub2date.Size = new System.Drawing.Size(50, 18);
+            this.sub2date.Size = new System.Drawing.Size(41, 15);
             this.sub2date.TabIndex = 1;
             this.sub2date.Text = "label3";
             // 
@@ -702,9 +755,10 @@ namespace ExamTimetableApp
             // 
             this.yrlabel.AutoSize = true;
             this.yrlabel.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yrlabel.Location = new System.Drawing.Point(1209, 138);
+            this.yrlabel.Location = new System.Drawing.Point(907, 112);
+            this.yrlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.yrlabel.Name = "yrlabel";
-            this.yrlabel.Size = new System.Drawing.Size(98, 27);
+            this.yrlabel.Size = new System.Drawing.Size(81, 22);
             this.yrlabel.TabIndex = 25;
             this.yrlabel.Text = "INSERT";
             this.yrlabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -713,12 +767,14 @@ namespace ExamTimetableApp
             // 
             this.deptalbel.AutoSize = true;
             this.deptalbel.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deptalbel.Location = new System.Drawing.Point(271, 138);
+            this.deptalbel.Location = new System.Drawing.Point(203, 112);
+            this.deptalbel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.deptalbel.Name = "deptalbel";
-            this.deptalbel.Size = new System.Drawing.Size(98, 27);
+            this.deptalbel.Size = new System.Drawing.Size(81, 22);
             this.deptalbel.TabIndex = 24;
             this.deptalbel.Text = "INSERT";
             this.deptalbel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.deptalbel.Click += new System.EventHandler(this.deptalbel_Click);
             // 
             // label1
             // 
@@ -726,9 +782,10 @@ namespace ExamTimetableApp
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(444, 23);
+            this.label1.Location = new System.Drawing.Point(333, 19);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(523, 30);
+            this.label1.Size = new System.Drawing.Size(418, 24);
             this.label1.TabIndex = 12;
             this.label1.Text = "DON BOSCO COLLEGE OF ENGINEERING ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -739,12 +796,14 @@ namespace ExamTimetableApp
             | System.Windows.Forms.AnchorStyles.Right)));
             this.examtitle.AutoSize = true;
             this.examtitle.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold);
-            this.examtitle.Location = new System.Drawing.Point(408, 83);
+            this.examtitle.Location = new System.Drawing.Point(306, 67);
+            this.examtitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.examtitle.Name = "examtitle";
-            this.examtitle.Size = new System.Drawing.Size(594, 40);
+            this.examtitle.Size = new System.Drawing.Size(484, 32);
             this.examtitle.TabIndex = 14;
             this.examtitle.Text = "EXAMINATION TITLE INSERT HERE";
             this.examtitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.examtitle.Click += new System.EventHandler(this.examtitle_Click);
             // 
             // label2
             // 
@@ -752,9 +811,10 @@ namespace ExamTimetableApp
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(603, 53);
+            this.label2.Location = new System.Drawing.Point(452, 43);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(192, 30);
+            this.label2.Size = new System.Drawing.Size(155, 24);
             this.label2.TabIndex = 13;
             this.label2.Text = "FATORDA-GOA";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -763,9 +823,10 @@ namespace ExamTimetableApp
             // 
             this.deptitle.AutoSize = true;
             this.deptitle.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deptitle.Location = new System.Drawing.Point(59, 138);
+            this.deptitle.Location = new System.Drawing.Point(44, 112);
+            this.deptitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.deptitle.Name = "deptitle";
-            this.deptitle.Size = new System.Drawing.Size(185, 27);
+            this.deptitle.Size = new System.Drawing.Size(151, 22);
             this.deptitle.TabIndex = 15;
             this.deptitle.Text = "DEPARTMENT :";
             this.deptitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -774,9 +835,10 @@ namespace ExamTimetableApp
             // 
             this.yrtitle.AutoSize = true;
             this.yrtitle.Font = new System.Drawing.Font("Arial", 13.8F);
-            this.yrtitle.Location = new System.Drawing.Point(1076, 138);
+            this.yrtitle.Location = new System.Drawing.Point(807, 112);
+            this.yrtitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.yrtitle.Name = "yrtitle";
-            this.yrtitle.Size = new System.Drawing.Size(90, 27);
+            this.yrtitle.Size = new System.Drawing.Size(72, 22);
             this.yrtitle.TabIndex = 16;
             this.yrtitle.Text = "YEAR :";
             this.yrtitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -789,18 +851,20 @@ namespace ExamTimetableApp
             this.sub1panel.Controls.Add(this.label16);
             this.sub1panel.Controls.Add(this.panel2);
             this.sub1panel.Controls.Add(this.sub1daypanel);
-            this.sub1panel.Location = new System.Drawing.Point(64, 213);
+            this.sub1panel.Location = new System.Drawing.Point(48, 173);
+            this.sub1panel.Margin = new System.Windows.Forms.Padding(2);
             this.sub1panel.Name = "sub1panel";
-            this.sub1panel.Size = new System.Drawing.Size(1243, 88);
+            this.sub1panel.Size = new System.Drawing.Size(932, 72);
             this.sub1panel.TabIndex = 17;
             // 
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel14.Controls.Add(this.sub1end);
-            this.panel14.Location = new System.Drawing.Point(1086, 20);
+            this.panel14.Location = new System.Drawing.Point(814, 16);
+            this.panel14.Margin = new System.Windows.Forms.Padding(2);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(142, 49);
+            this.panel14.Size = new System.Drawing.Size(106, 40);
             this.panel14.TabIndex = 4;
             // 
             // sub1end
@@ -808,9 +872,10 @@ namespace ExamTimetableApp
             this.sub1end.AutoSize = true;
             this.sub1end.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub1end.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub1end.Location = new System.Drawing.Point(14, 16);
+            this.sub1end.Location = new System.Drawing.Point(10, 13);
+            this.sub1end.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub1end.Name = "sub1end";
-            this.sub1end.Size = new System.Drawing.Size(50, 18);
+            this.sub1end.Size = new System.Drawing.Size(41, 15);
             this.sub1end.TabIndex = 1;
             this.sub1end.Text = "label3";
             // 
@@ -818,9 +883,10 @@ namespace ExamTimetableApp
             // 
             this.panel13.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel13.Controls.Add(this.sub1start);
-            this.panel13.Location = new System.Drawing.Point(796, 20);
+            this.panel13.Location = new System.Drawing.Point(597, 16);
+            this.panel13.Margin = new System.Windows.Forms.Padding(2);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(142, 49);
+            this.panel13.Size = new System.Drawing.Size(106, 40);
             this.panel13.TabIndex = 3;
             // 
             // sub1start
@@ -828,9 +894,10 @@ namespace ExamTimetableApp
             this.sub1start.AutoSize = true;
             this.sub1start.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub1start.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub1start.Location = new System.Drawing.Point(14, 16);
+            this.sub1start.Location = new System.Drawing.Point(10, 13);
+            this.sub1start.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub1start.Name = "sub1start";
-            this.sub1start.Size = new System.Drawing.Size(50, 18);
+            this.sub1start.Size = new System.Drawing.Size(41, 15);
             this.sub1start.TabIndex = 1;
             this.sub1start.Text = "label3";
             // 
@@ -838,9 +905,10 @@ namespace ExamTimetableApp
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(1002, 30);
+            this.label16.Location = new System.Drawing.Point(752, 24);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(17, 24);
+            this.label16.Size = new System.Drawing.Size(14, 18);
             this.label16.TabIndex = 28;
             this.label16.Text = "-";
             // 
@@ -848,19 +916,22 @@ namespace ExamTimetableApp
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel2.Controls.Add(this.sub1name);
-            this.panel2.Location = new System.Drawing.Point(365, 20);
+            this.panel2.Location = new System.Drawing.Point(274, 16);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(399, 49);
+            this.panel2.Size = new System.Drawing.Size(299, 40);
             this.panel2.TabIndex = 2;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // sub1name
             // 
             this.sub1name.AutoSize = true;
             this.sub1name.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub1name.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub1name.Location = new System.Drawing.Point(14, 16);
+            this.sub1name.Location = new System.Drawing.Point(10, 13);
+            this.sub1name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub1name.Name = "sub1name";
-            this.sub1name.Size = new System.Drawing.Size(50, 18);
+            this.sub1name.Size = new System.Drawing.Size(41, 15);
             this.sub1name.TabIndex = 1;
             this.sub1name.Text = "label3";
             // 
@@ -868,19 +939,22 @@ namespace ExamTimetableApp
             // 
             this.sub1daypanel.BackColor = System.Drawing.SystemColors.HotTrack;
             this.sub1daypanel.Controls.Add(this.sub1date);
-            this.sub1daypanel.Location = new System.Drawing.Point(14, 20);
+            this.sub1daypanel.Location = new System.Drawing.Point(10, 16);
+            this.sub1daypanel.Margin = new System.Windows.Forms.Padding(2);
             this.sub1daypanel.Name = "sub1daypanel";
-            this.sub1daypanel.Size = new System.Drawing.Size(332, 49);
+            this.sub1daypanel.Size = new System.Drawing.Size(249, 40);
             this.sub1daypanel.TabIndex = 0;
+            this.sub1daypanel.Paint += new System.Windows.Forms.PaintEventHandler(this.sub1daypanel_Paint);
             // 
             // sub1date
             // 
             this.sub1date.AutoSize = true;
             this.sub1date.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub1date.ForeColor = System.Drawing.SystemColors.Window;
-            this.sub1date.Location = new System.Drawing.Point(14, 16);
+            this.sub1date.Location = new System.Drawing.Point(10, 13);
+            this.sub1date.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sub1date.Name = "sub1date";
-            this.sub1date.Size = new System.Drawing.Size(50, 18);
+            this.sub1date.Size = new System.Drawing.Size(41, 15);
             this.sub1date.TabIndex = 1;
             this.sub1date.Text = "label3";
             // 
@@ -888,17 +962,19 @@ namespace ExamTimetableApp
             // 
             this.daylabel.AutoSize = true;
             this.daylabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.daylabel.Location = new System.Drawing.Point(60, 186);
+            this.daylabel.Location = new System.Drawing.Point(45, 151);
+            this.daylabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.daylabel.Name = "daylabel";
-            this.daylabel.Size = new System.Drawing.Size(105, 24);
+            this.daylabel.Size = new System.Drawing.Size(87, 18);
             this.daylabel.TabIndex = 19;
             this.daylabel.Text = "Day / Date";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1218, 22);
+            this.button1.Location = new System.Drawing.Point(914, 18);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(169, 36);
+            this.button1.Size = new System.Drawing.Size(127, 29);
             this.button1.TabIndex = 12;
             this.button1.Text = "Save TimeTable";
             this.button1.UseVisualStyleBackColor = true;
@@ -906,17 +982,18 @@ namespace ExamTimetableApp
             // 
             // TimeTable
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1396, 885);
+            this.ClientSize = new System.Drawing.Size(1047, 719);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.timetablepanel);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "TimeTable";
-            this.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.Padding = new System.Windows.Forms.Padding(0, 0, 0, 16);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TimeTable";
             this.Load += new System.EventHandler(this.TimeTable_Load);

@@ -20,7 +20,7 @@ namespace ExamTimetableApp
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if ((username.Text == "dbce" ) &&  (password.Text == "dbcegoa123"))
+            if ((username.Text == "dbce" ) &&  (password.Text == "123"))
             {
                 Login.admin = true;
                 this.Hide();

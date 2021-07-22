@@ -192,7 +192,7 @@ namespace ExamTimetableApp
                 cmd.CommandText = query;
                 cmd.ExecuteNonQuery();
             }
-            ((OleDbDataAdapter)new OleDbDataAdapter(cmd)).Fill(Timetabledata);        // Filling the DataTable with all entries from Excel File (Oxygen Suppliers)
+            ((OleDbDataAdapter)new OleDbDataAdapter(cmd)).Fill(Timetabledata);        // Filling the DataTable with all entries from Excel File
             odb.Close();
             setHeaderLabels(Timetableheaders);
             getSubjectPanels(Timetableheaders);
@@ -213,20 +213,16 @@ namespace ExamTimetableApp
 
         }
 
-        private void setHeaderLabels(DataTable x)
+        private void setHeaderLabels(DataTable x)   
         {
-         
-         
-
             int i = x.Rows.Count - 1;
             string yrheader = x.Rows[i][0].ToString();
             string departmentheader = x.Rows[i][1].ToString();
             string examtitleheader = x.Rows[i][2].ToString();
-
             yrlabel.Text = yrheader;
             deptalbel.Text = departmentheader;
             examtitle.Text = examtitleheader;
-
+            
          
 
         }
@@ -236,6 +232,10 @@ namespace ExamTimetableApp
             string yrheader = x.Rows[i][0].ToString();
             string departmentheader = x.Rows[i][1].ToString();
             string examtitleheader = x.Rows[i][2].ToString();
+            if (x.Rows.ToString() == string.Empty)
+            {
+                MessageBox.Show("Please Select Number of Subjects!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
             numberofsub = int.Parse(x.Rows[i][3].ToString());  
             
@@ -309,8 +309,8 @@ namespace ExamTimetableApp
                     string subdy = s.Rows[i][1].ToString();
                     string subst = s.Rows[i][2].ToString();
                     string subet = s.Rows[i][3].ToString();
-                    sub1date.Text = subnm;
-                    sub1name.Text = subdy;
+                    sub1date.Text = subdy;
+                    sub1name.Text = subnm;
                     sub1start.Text = subst;
                     sub1end.Text = subet;
                 }
@@ -321,8 +321,8 @@ namespace ExamTimetableApp
                     string subdy = s.Rows[i][1].ToString();
                     string subst = s.Rows[i][2].ToString();
                     string subet = s.Rows[i][3].ToString();
-                    sub2date.Text = subnm;
-                    sub2name.Text = subdy;
+                    sub2date.Text = subdy;
+                    sub2name.Text = subnm;
                     sub2start.Text = subst;
                     sub2end.Text = subet;
                 }
@@ -332,8 +332,8 @@ namespace ExamTimetableApp
                     string subdy = s.Rows[i][1].ToString();
                     string subst = s.Rows[i][2].ToString();
                     string subet = s.Rows[i][3].ToString();
-                    sub3date.Text = subnm;
-                    sub3name.Text = subdy;
+                    sub3date.Text = subdy;
+                    sub3name.Text = subnm;
                     sub3start.Text = subst;
                     sub3end.Text = subet;
                 }
@@ -343,8 +343,8 @@ namespace ExamTimetableApp
                     string subdy = s.Rows[i][1].ToString();
                     string subst = s.Rows[i][2].ToString();
                     string subet = s.Rows[i][3].ToString();
-                    sub4date.Text = subnm;
-                    sub4name.Text = subdy;
+                    sub4date.Text = subdy;
+                    sub4name.Text = subnm;
                     sub4start.Text = subst;
                     sub4end.Text = subet;
                 }
@@ -354,8 +354,8 @@ namespace ExamTimetableApp
                     string subdy = s.Rows[i][1].ToString();
                     string subst = s.Rows[i][2].ToString();
                     string subet = s.Rows[i][3].ToString();
-                    sub5date.Text = subnm;
-                    sub5name.Text = subdy;
+                    sub5date.Text = subdy;
+                    sub5name.Text = subnm;
                     sub5start.Text = subst;
                     sub5end.Text = subet;
                 }
@@ -365,8 +365,8 @@ namespace ExamTimetableApp
                     string subdy = s.Rows[i][1].ToString();
                     string subst = s.Rows[i][2].ToString();
                     string subet = s.Rows[i][3].ToString();
-                    sub6date.Text = subnm;
-                    sub6name.Text = subdy;
+                    sub6date.Text = subdy;
+                    sub6name.Text = subnm;
                     sub6start.Text = subst;
                     sub6end.Text = subet;
                 }
@@ -378,5 +378,24 @@ namespace ExamTimetableApp
 
         }
 
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void sub1daypanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void examtitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deptalbel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
