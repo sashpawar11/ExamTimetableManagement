@@ -61,6 +61,7 @@ namespace ExamTimetableApp
             // 
             // yearBox
             // 
+            this.yearBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.yearBox.FormattingEnabled = true;
             this.yearBox.Items.AddRange(new object[] {
             "FE",
@@ -74,12 +75,14 @@ namespace ExamTimetableApp
             // 
             // departmentBox
             // 
-            this.departmentBox.FormattingEnabled = true;
+            this.departmentBox.DropDownHeight = 120;
+            this.departmentBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.departmentBox.IntegralHeight = false;
             this.departmentBox.Items.AddRange(new object[] {
             "Computer Engineering",
             "Civil Engineering",
-            "Mechanical Engineering\t",
-            "Electronics & Telecommunication Engineering\t",
+            "Mechanical Engineering",
+            "Electronics & Telecommunication Engineering",
             "Science & Humanities"});
             this.departmentBox.Location = new System.Drawing.Point(252, 74);
             this.departmentBox.Name = "departmentBox";
@@ -130,8 +133,9 @@ namespace ExamTimetableApp
             this.updatebtn.Name = "updatebtn";
             this.updatebtn.Size = new System.Drawing.Size(296, 37);
             this.updatebtn.TabIndex = 15;
-            this.updatebtn.Text = "Update Timetable";
+            this.updatebtn.Text = "Delete Timetable";
             this.updatebtn.UseVisualStyleBackColor = true;
+            this.updatebtn.Click += new System.EventHandler(this.updatebtn_Click);
             // 
             // createbtn
             // 

@@ -97,7 +97,7 @@ namespace ExamTimetableApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 234);
+            this.ClientSize = new System.Drawing.Size(462, 248);
             this.Controls.Add(this.panel1);
             this.Name = "AdminLoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

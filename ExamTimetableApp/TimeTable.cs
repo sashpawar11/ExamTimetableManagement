@@ -21,7 +21,7 @@ namespace ExamTimetableApp
             InitializeComponent();
         }
 
-        public static string connectionString = "";
+        
         public static int numberofsub;
         public static string departmentnm = Navigation.departmentName;
         public static string year = Navigation.year;
@@ -67,55 +67,57 @@ namespace ExamTimetableApp
             sub5panel.Hide();
             sub6panel.Hide();
 
-
             if (departmentnm == "Computer Engineering")
             {
-                connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
-                            Data source = D:\timetabledatabase\ComputerEngineering.xlsx; 
-                            Extended Properties = 'Excel 8.0'";
-                OleDbConnection odb = new OleDbConnection(connectionString);
-                viewTimetable(odb);
+                string connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
+                                Data source = D:\timetabledatabase\ComputerEngineering.xlsx; 
+                                Extended Properties = 'Excel 8.0'";
+
+                OleDbConnection odb1 = new OleDbConnection(connectionString);
+                viewTimetable(odb1);
+
 
 
             }
             if (departmentnm == "Civil Engineering")
             {
-                connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
-                            Data source = D:\timetabledatabase\CivilEngineering.xlsx; 
-                            Extended Properties = 'Excel 8.0'";
-                OleDbConnection odb = new OleDbConnection(connectionString);
-                viewTimetable(odb);
-
+                string con2 = @"provider = Microsoft.ACE.OLEDB.12.0; 
+                                Data source = D:\timetabledatabase\CivilEngineering.xlsx; 
+                                Extended Properties = 'Excel 8.0'";
+                OleDbConnection odb2 = new OleDbConnection(con2);
+                viewTimetable(odb2);
 
             }
             if (departmentnm == "Mechanical Engineering")
             {
-                connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
-                            Data source = D:\timetabledatabase\MechanicalEngineering.xlsx; 
-                            Extended Properties = 'Excel 8.0'";
-                OleDbConnection odb = new OleDbConnection(connectionString);
-                viewTimetable(odb);
+                string con3 = @"provider = Microsoft.ACE.OLEDB.12.0; 
+                                Data source = D:\timetabledatabase\MechanicalEngineering.xlsx; 
+                                Extended Properties = 'Excel 8.0'";
+                OleDbConnection odb3 = new OleDbConnection(con3);
+                viewTimetable(odb3);
+
 
             }
             if (departmentnm == "Electronics & Telecommunication Engineering")
             {
-                connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
-                            Data source = D:\timetabledatabase\Electronics&TelecommunicationEngineering.xlsx; 
-                            Extended Properties = 'Excel 8.0'";
-                OleDbConnection odb = new OleDbConnection(connectionString);
-                viewTimetable(odb);
+                string con4 = @"provider = Microsoft.ACE.OLEDB.12.0; 
+                                Data source = D:\timetabledatabase\Electronics&TelecommunicationEngineering.xlsx; 
+                                Extended Properties = 'Excel 8.0'";
+                OleDbConnection odb4 = new OleDbConnection(con4);
+                viewTimetable(odb4);
+
 
             }
             if (departmentnm == "Science & Humanities")
             {
-                connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
-                            Data source = D:\timetabledatabase\Science&Humanities.xlsx; 
-                            Extended Properties = 'Excel 8.0'";
-                OleDbConnection odb = new OleDbConnection(connectionString);
-                viewTimetable(odb);
-
+                string con5 = @"provider = Microsoft.ACE.OLEDB.12.0; 
+                                Data source = D:\timetabledatabase\Science&Humanities.xlsx; 
+                                Extended Properties = 'Excel 8.0'";
+                OleDbConnection odb5 = new OleDbConnection(con5);
+                viewTimetable(odb5);
 
             }
+
             
 
 
@@ -124,38 +126,31 @@ namespace ExamTimetableApp
         private void viewTimetable(OleDbConnection odb)
         {
 
-
-            //string connection = string.Format(@"{0}", getConsstring());
+            
+            odb.Open();
             DataTable Timetableheaders = new DataTable();
             DataTable Timetabledata = new DataTable();
-            odb.Open();
+            
             OleDbCommand cmd = new OleDbCommand();
 
             //importing timetable headers 
-            string th = @"SELECT * from [DT$]";
-            cmd.Connection = odb;
-            cmd.CommandText = th;
-            cmd.ExecuteNonQuery();
-            ((OleDbDataAdapter)new OleDbDataAdapter(cmd)).Fill(Timetableheaders);
+            //string th = @"SELECT * from [DT$]";
+            //cmd.Connection = odb;
+            //cmd.CommandText = th;
+            //cmd.ExecuteNonQuery();
+            //((OleDbDataAdapter)new OleDbDataAdapter(cmd)).Fill(Timetableheaders);
             //Checks for empty rows in datatable and deletes them
           
-            try
-            {
-                Timetableheaders = Timetableheaders.Rows
-                   .Cast<DataRow>()
-                   .Where(row => !row.ItemArray.All(field => field is DBNull ||
-                                                    string.IsNullOrWhiteSpace(field as string)))
-                   .CopyToDataTable();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Failure in reading database!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-            setHeaderLabels(Timetableheaders);
-            getSubjectPanels(Timetableheaders);
+           
+           
+            
             if ((year == "FE"))
             {
+                string th = @"SELECT * from [DT$] WHERE [Year] = '" + year + "'";
+                cmd.Connection = odb;
+                cmd.CommandText = th;
+                cmd.ExecuteNonQuery();
+                ((OleDbDataAdapter)new OleDbDataAdapter(cmd)).Fill(Timetableheaders);
                 string query = @"SELECT * from [FE$]";
                 cmd.Connection = odb;
                 cmd.CommandText = query;
@@ -163,6 +158,11 @@ namespace ExamTimetableApp
             }
             if ((year == "SE"))
             {
+                string th = @"SELECT * from [DT$] WHERE [Year] = '" + year + "'";
+                cmd.Connection = odb;
+                cmd.CommandText = th;
+                cmd.ExecuteNonQuery();
+                ((OleDbDataAdapter)new OleDbDataAdapter(cmd)).Fill(Timetableheaders);
                 string query = @"SELECT * from [SE$]";
                 cmd.Connection = odb;
                 cmd.CommandText = query;
@@ -170,6 +170,11 @@ namespace ExamTimetableApp
             }
             if ((year == "TE"))
             {
+                string th = @"SELECT * from [DT$] WHERE [Year] = '" + year + "'";
+                cmd.Connection = odb;
+                cmd.CommandText = th;
+                cmd.ExecuteNonQuery();
+                ((OleDbDataAdapter)new OleDbDataAdapter(cmd)).Fill(Timetableheaders);
                 string query = @"SELECT * from [TE$]";
                 cmd.Connection = odb;
                 cmd.CommandText = query;
@@ -177,6 +182,11 @@ namespace ExamTimetableApp
             }
             if ((year == "BE"))
             {
+                string th = @"SELECT * from [DT$] WHERE [Year] = '" + year + "'";
+                cmd.Connection = odb;
+                cmd.CommandText = th;
+                cmd.ExecuteNonQuery();
+                ((OleDbDataAdapter)new OleDbDataAdapter(cmd)).Fill(Timetableheaders);
                 string query = @"SELECT * from [BE$]";
                 cmd.Connection = odb;
                 cmd.CommandText = query;
@@ -184,6 +194,8 @@ namespace ExamTimetableApp
             }
             ((OleDbDataAdapter)new OleDbDataAdapter(cmd)).Fill(Timetabledata);        // Filling the DataTable with all entries from Excel File (Oxygen Suppliers)
             odb.Close();
+            setHeaderLabels(Timetableheaders);
+            getSubjectPanels(Timetableheaders);
             try
             {
                 Timetabledata = Timetabledata.Rows
@@ -194,7 +206,7 @@ namespace ExamTimetableApp
             }
             catch (Exception)
             {
-                MessageBox.Show("Failure in reading database!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+               
             }
 
             displayData(Timetabledata);
@@ -206,7 +218,7 @@ namespace ExamTimetableApp
          
          
 
-            int i = (x.Rows.Count - 1);
+            int i = x.Rows.Count - 1;
             string yrheader = x.Rows[i][0].ToString();
             string departmentheader = x.Rows[i][1].ToString();
             string examtitleheader = x.Rows[i][2].ToString();
@@ -273,19 +285,90 @@ namespace ExamTimetableApp
         private void displayData(DataTable s)
         {
             int i;
+            if (numberofsub == 1)
+            {
+                string sub1nm = s.Rows[0][0].ToString();
+                string sub1dy = s.Rows[0][1].ToString();
+                string sub1st = s.Rows[0][2].ToString();
+                string sub1et = s.Rows[0][3].ToString();
+                sub1date.Text = sub1dy;
+                sub1name.Text = sub1nm;
+                sub1start.Text = sub1st;
+                sub1end.Text = sub1et;
+            }
+
+
+
             for (i = 0; i < numberofsub; i++)
             {
-                string subname = s.Rows[i][0].ToString();
-                string daydate = s.Rows[i][1].ToString();
-                string starttime = s.Rows[i][2].ToString();
-                string endtime = s.Rows[i][3].ToString();
-
-               if(i == 0)
+                
+              
+                if (i == 0)
                 {
-                    sub1date.Text = daydate;
-                    sub1name.Text = subname;
-                    sub1start.Text = starttime;
-                    sub1end.Text = endtime;
+                    string subnm = s.Rows[i][0].ToString();
+                    string subdy = s.Rows[i][1].ToString();
+                    string subst = s.Rows[i][2].ToString();
+                    string subet = s.Rows[i][3].ToString();
+                    sub1date.Text = subnm;
+                    sub1name.Text = subdy;
+                    sub1start.Text = subst;
+                    sub1end.Text = subet;
+                }
+                if(i == 1)
+                {
+
+                    string subnm = s.Rows[i][0].ToString();
+                    string subdy = s.Rows[i][1].ToString();
+                    string subst = s.Rows[i][2].ToString();
+                    string subet = s.Rows[i][3].ToString();
+                    sub2date.Text = subnm;
+                    sub2name.Text = subdy;
+                    sub2start.Text = subst;
+                    sub2end.Text = subet;
+                }
+                if (i == 2)
+                {
+                    string subnm = s.Rows[i][0].ToString();
+                    string subdy = s.Rows[i][1].ToString();
+                    string subst = s.Rows[i][2].ToString();
+                    string subet = s.Rows[i][3].ToString();
+                    sub3date.Text = subnm;
+                    sub3name.Text = subdy;
+                    sub3start.Text = subst;
+                    sub3end.Text = subet;
+                }
+                if (i == 3)
+                {
+                    string subnm = s.Rows[i][0].ToString();
+                    string subdy = s.Rows[i][1].ToString();
+                    string subst = s.Rows[i][2].ToString();
+                    string subet = s.Rows[i][3].ToString();
+                    sub4date.Text = subnm;
+                    sub4name.Text = subdy;
+                    sub4start.Text = subst;
+                    sub4end.Text = subet;
+                }
+                if (i == 4)
+                {
+                    string subnm = s.Rows[i][0].ToString();
+                    string subdy = s.Rows[i][1].ToString();
+                    string subst = s.Rows[i][2].ToString();
+                    string subet = s.Rows[i][3].ToString();
+                    sub5date.Text = subnm;
+                    sub5name.Text = subdy;
+                    sub5start.Text = subst;
+                    sub5end.Text = subet;
+                }
+                if (i == 5)
+                {
+                    string subnm = s.Rows[i][0].ToString();
+                    string subdy = s.Rows[i][1].ToString();
+                    string subst = s.Rows[i][2].ToString();
+                    string subet = s.Rows[i][3].ToString();
+                    sub6date.Text = subnm;
+                    sub6name.Text = subdy;
+                    sub6start.Text = subst;
+                    sub6end.Text = subet;
                 }
             }
         }
@@ -295,55 +378,5 @@ namespace ExamTimetableApp
 
         }
 
-        //private string getConsstring()
-        //{
-
-        //    if (departmentnm == "Computer Engineering")
-        //    {
-        //        string conn = @"provider = Microsoft.ACE.OLEDB.12.0; 
-        //                    Data source = D:\timetabledatabase\ComputerEngineering.xlsx; 
-        //                    Extended Properties = 'Excel 8.0'";
-        //        return conn;
-
-        //    }
-        //    if (departmentnm == "Civil Engineering")
-        //    {
-        //        string conn = @"provider = Microsoft.ACE.OLEDB.12.0; 
-        //                    Data source = D:\timetabledatabase\CivilEngineering.xlsx; 
-        //                    Extended Properties = 'Excel 8.0'";
-        //        return conn;
-
-        //    }
-        //    if (departmentnm == "Mechanical Engineering")
-        //    {
-        //        string conn = @"provider = Microsoft.ACE.OLEDB.12.0; 
-        //                    Data source = D:\timetabledatabase\MechanicalEngineering.xlsx; 
-        //                    Extended Properties = 'Excel 8.0'";
-
-                
-        //        return conn;
-
-        //    }
-        //    if (departmentnm == "Electronics & Telecommunication Engineering")
-        //    {
-        //        string conn = @"provider = Microsoft.ACE.OLEDB.12.0; 
-        //                    Data source = D:\timetabledatabase\Electronics&TelecommunicationEngineering.xlsx; 
-        //                    Extended Properties = 'Excel 8.0'";
-        //        return conn;
-
-        //    }
-        //    if (departmentnm == "Science & Humanities")
-        //    {
-        //        string conn = @"provider = Microsoft.ACE.OLEDB.12.0; 
-        //                    Data source = D:\timetabledatabase\Science&Humanities.xlsx; 
-        //                    Extended Properties = 'Excel 8.0'";
-        //        return conn;
-
-        //    }
-        //    else
-        //    {
-        //        return "Error!";
-        //    }
-        //}
     }
 }
