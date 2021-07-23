@@ -134,18 +134,6 @@ namespace ExamTimetableApp
             DataTable Timetabledata = new DataTable();
             
             OleDbCommand cmd = new OleDbCommand();
-
-            //importing timetable headers 
-            //string th = @"SELECT * from [DT$]";
-            //cmd.Connection = odb;
-            //cmd.CommandText = th;
-            //cmd.ExecuteNonQuery();
-            //((OleDbDataAdapter)new OleDbDataAdapter(cmd)).Fill(Timetableheaders);
-            //Checks for empty rows in datatable and deletes them
-          
-           
-           
-            
             if ((year == "FE"))
             {
                 string th = @"SELECT * from [DT$] WHERE [Year] = '" + year + "'";
@@ -307,8 +295,8 @@ namespace ExamTimetableApp
               
                 if (i == 0)
                 {
-                    string subnm = s.Rows[i][0].ToString();
-                    string subdy = s.Rows[i][1].ToString();
+                    string subdy = s.Rows[i][0].ToString();
+                    string subnm = s.Rows[i][1].ToString();
                     string subst = s.Rows[i][2].ToString();
                     string subet = s.Rows[i][3].ToString();
                     sub1date.Text = subdy;
@@ -319,8 +307,8 @@ namespace ExamTimetableApp
                 if(i == 1)
                 {
 
-                    string subnm = s.Rows[i][0].ToString();
-                    string subdy = s.Rows[i][1].ToString();
+                    string subdy = s.Rows[i][0].ToString();
+                    string subnm = s.Rows[i][1].ToString();
                     string subst = s.Rows[i][2].ToString();
                     string subet = s.Rows[i][3].ToString();
                     sub2date.Text = subdy;
@@ -330,8 +318,8 @@ namespace ExamTimetableApp
                 }
                 if (i == 2)
                 {
-                    string subnm = s.Rows[i][0].ToString();
-                    string subdy = s.Rows[i][1].ToString();
+                    string subdy = s.Rows[i][0].ToString();
+                    string subnm = s.Rows[i][1].ToString();
                     string subst = s.Rows[i][2].ToString();
                     string subet = s.Rows[i][3].ToString();
                     sub3date.Text = subdy;
@@ -341,8 +329,8 @@ namespace ExamTimetableApp
                 }
                 if (i == 3)
                 {
-                    string subnm = s.Rows[i][0].ToString();
-                    string subdy = s.Rows[i][1].ToString();
+                    string subdy = s.Rows[i][0].ToString();
+                    string subnm = s.Rows[i][1].ToString();
                     string subst = s.Rows[i][2].ToString();
                     string subet = s.Rows[i][3].ToString();
                     sub4date.Text = subdy;
@@ -352,8 +340,8 @@ namespace ExamTimetableApp
                 }
                 if (i == 4)
                 {
-                    string subnm = s.Rows[i][0].ToString();
-                    string subdy = s.Rows[i][1].ToString();
+                    string subdy = s.Rows[i][0].ToString();
+                    string subnm = s.Rows[i][1].ToString();
                     string subst = s.Rows[i][2].ToString();
                     string subet = s.Rows[i][3].ToString();
                     sub5date.Text = subdy;
@@ -363,8 +351,8 @@ namespace ExamTimetableApp
                 }
                 if (i == 5)
                 {
-                    string subnm = s.Rows[i][0].ToString();
-                    string subdy = s.Rows[i][1].ToString();
+                    string subdy = s.Rows[i][0].ToString();
+                    string subnm = s.Rows[i][1].ToString();
                     string subst = s.Rows[i][2].ToString();
                     string subet = s.Rows[i][3].ToString();
                     sub6date.Text = subdy;
@@ -396,6 +384,11 @@ namespace ExamTimetableApp
         }
 
         private void deptalbel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sub1daypanel_Paint_1(object sender, PaintEventArgs e)
         {
 
         }
