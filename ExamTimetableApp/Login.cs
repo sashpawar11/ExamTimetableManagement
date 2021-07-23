@@ -40,5 +40,15 @@ namespace ExamTimetableApp
         {
 
         }
+
+        private void closebtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void minbtn_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

@@ -377,6 +377,5 @@ namespace ExamTimetableApp
         {
 
         }
-
     }
 }
