@@ -213,7 +213,7 @@ namespace ExamTimetableApp
             deptalbel.Text = departmentheader;
             examtitle.Text = examtitleheader;
             
-         
+
 
         }
         private void getSubjectPanels(DataTable x)
@@ -221,7 +221,7 @@ namespace ExamTimetableApp
             int i = x.Rows.Count - 1;
             string yrheader = x.Rows[i][0].ToString();
             string departmentheader = x.Rows[i][1].ToString();
-            string examtitleheader = x.Rows[i][2].ToString();
+            string examtitleheader = x.Rows[i][2].ToString(); 
             if (x.Rows.ToString() == string.Empty)
             {
                 MessageBox.Show("Please Select Number of Subjects!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -389,6 +389,26 @@ namespace ExamTimetableApp
         }
 
         private void sub1daypanel_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel29_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void examtitle_Click_1(object sender, EventArgs e)
         {
 
         }

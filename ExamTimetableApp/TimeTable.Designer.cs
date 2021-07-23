@@ -103,9 +103,10 @@ namespace ExamTimetableApp
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.examtitle = new System.Windows.Forms.Label();
-            this.yrtitle = new System.Windows.Forms.Label();
-            this.yrlabel = new System.Windows.Forms.Label();
             this.timetablepanel = new System.Windows.Forms.Panel();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.yrlabel = new System.Windows.Forms.Label();
             this.sub1panel.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -142,6 +143,7 @@ namespace ExamTimetableApp
             this.panel27.SuspendLayout();
             this.panel29.SuspendLayout();
             this.timetablepanel.SuspendLayout();
+            this.panel28.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -893,6 +895,7 @@ namespace ExamTimetableApp
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(728, 142);
             this.panel29.TabIndex = 33;
+            this.panel29.Paint += new System.Windows.Forms.PaintEventHandler(this.panel29_Paint);
             // 
             // label1
             // 
@@ -901,12 +904,12 @@ namespace ExamTimetableApp
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SlateBlue;
-            this.label1.Location = new System.Drawing.Point(106, 30);
+            this.label1.Location = new System.Drawing.Point(167, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(414, 23);
             this.label1.TabIndex = 12;
             this.label1.Text = "DON BOSCO COLLEGE OF ENGINEERING ";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label2
             // 
@@ -915,12 +918,12 @@ namespace ExamTimetableApp
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.SlateBlue;
-            this.label2.Location = new System.Drawing.Point(238, 53);
+            this.label2.Location = new System.Drawing.Point(300, 53);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(157, 23);
             this.label2.TabIndex = 13;
             this.label2.Text = "FATORDA-GOA";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // examtitle
             // 
@@ -929,38 +932,13 @@ namespace ExamTimetableApp
             this.examtitle.AutoSize = true;
             this.examtitle.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.examtitle.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.examtitle.Location = new System.Drawing.Point(71, 76);
+            this.examtitle.Location = new System.Drawing.Point(298, 76);
             this.examtitle.Name = "examtitle";
             this.examtitle.Size = new System.Drawing.Size(491, 31);
             this.examtitle.TabIndex = 14;
             this.examtitle.Text = "EXAMINATION TITLE INSERT HERE";
-            this.examtitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // yrtitle
-            // 
-            this.yrtitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.yrtitle.AutoSize = true;
-            this.yrtitle.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yrtitle.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.yrtitle.Location = new System.Drawing.Point(1216, 143);
-            this.yrtitle.Name = "yrtitle";
-            this.yrtitle.Size = new System.Drawing.Size(56, 17);
-            this.yrtitle.TabIndex = 16;
-            this.yrtitle.Text = "YEAR :";
-            this.yrtitle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // yrlabel
-            // 
-            this.yrlabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.yrlabel.AutoSize = true;
-            this.yrlabel.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yrlabel.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.yrlabel.Location = new System.Drawing.Point(1216, 160);
-            this.yrlabel.Name = "yrlabel";
-            this.yrlabel.Size = new System.Drawing.Size(63, 17);
-            this.yrlabel.TabIndex = 25;
-            this.yrlabel.Text = "INSERT";
-            this.yrlabel.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.examtitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.examtitle.Click += new System.EventHandler(this.examtitle_Click_1);
             // 
             // timetablepanel
             // 
@@ -968,9 +946,8 @@ namespace ExamTimetableApp
             this.timetablepanel.AutoSize = true;
             this.timetablepanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.timetablepanel.BackColor = System.Drawing.Color.MintCream;
+            this.timetablepanel.Controls.Add(this.panel28);
             this.timetablepanel.Controls.Add(this.button1);
-            this.timetablepanel.Controls.Add(this.yrlabel);
-            this.timetablepanel.Controls.Add(this.yrtitle);
             this.timetablepanel.Controls.Add(this.panel29);
             this.timetablepanel.Controls.Add(this.panel27);
             this.timetablepanel.Controls.Add(this.panel26);
@@ -989,6 +966,45 @@ namespace ExamTimetableApp
             this.timetablepanel.Size = new System.Drawing.Size(1322, 836);
             this.timetablepanel.TabIndex = 11;
             this.timetablepanel.Paint += new System.Windows.Forms.PaintEventHandler(this.timetablepanel_Paint);
+            // 
+            // panel28
+            // 
+            this.panel28.Controls.Add(this.label5);
+            this.panel28.Controls.Add(this.yrlabel);
+            this.panel28.Location = new System.Drawing.Point(1131, 117);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(137, 61);
+            this.panel28.TabIndex = 34;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.label5.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label5.Location = new System.Drawing.Point(6, 13);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(56, 17);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "YEAR :";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // yrlabel
+            // 
+            this.yrlabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.yrlabel.AutoSize = true;
+            this.yrlabel.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.yrlabel.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.yrlabel.Location = new System.Drawing.Point(6, 30);
+            this.yrlabel.Name = "yrlabel";
+            this.yrlabel.Size = new System.Drawing.Size(63, 17);
+            this.yrlabel.TabIndex = 24;
+            this.yrlabel.Text = "INSERT";
+            this.yrlabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.yrlabel.Click += new System.EventHandler(this.label6_Click);
             // 
             // TimeTable
             // 
@@ -1076,7 +1092,8 @@ namespace ExamTimetableApp
             this.panel29.ResumeLayout(false);
             this.panel29.PerformLayout();
             this.timetablepanel.ResumeLayout(false);
-            this.timetablepanel.PerformLayout();
+            this.panel28.ResumeLayout(false);
+            this.panel28.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1157,8 +1174,9 @@ namespace ExamTimetableApp
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label examtitle;
-        private System.Windows.Forms.Label yrtitle;
-        private System.Windows.Forms.Label yrlabel;
         private System.Windows.Forms.Panel timetablepanel;
+        private System.Windows.Forms.Panel panel28;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label yrlabel;
     }
 }
