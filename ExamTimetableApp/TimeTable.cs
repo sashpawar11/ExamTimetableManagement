@@ -31,14 +31,14 @@ namespace ExamTimetableApp
             {
                 button1.Hide();
                 timetablepanel.DrawToBitmap(bmp, new Rectangle(0, 0, bmp.Width, bmp.Height));
-                bmp.Save(@"savedtimetables/jpg/examtimetable.jpg");
+                bmp.Save(@"D:/savedtimetables/jpg/examtimetable.jpg");
             }
 
 
 
 
-            string source  = @"savedtimetables/jpg/examtimetable.jpg";
-            string destination = @"savedtimetables/pdf/examtimetable.pdf";
+            string source  = @"D:/savedtimetables/jpg/examtimetable.jpg";
+            string destination = @"D:/savedtimetables/pdf/examtimetable.pdf";
             PdfDocument doc = new PdfDocument();
             PdfPage page = doc.AddPage();
             page.Width = timetablepanel.Width;
