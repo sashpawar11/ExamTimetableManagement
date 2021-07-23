@@ -50,6 +50,7 @@ namespace ExamTimetableApp
             doc.Close();
             MessageBox.Show("Timetable Successfully Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             button1.Show();
+            
 
         }
     
@@ -206,13 +207,23 @@ namespace ExamTimetableApp
         private void setHeaderLabels(DataTable x)   
         {
             int i = x.Rows.Count - 1;
-            string yrheader = x.Rows[i][0].ToString();
-            string departmentheader = x.Rows[i][1].ToString();
-            string examtitleheader = x.Rows[i][2].ToString();
-            yrlabel.Text = yrheader;
-            deptalbel.Text = departmentheader;
-            examtitle.Text = examtitleheader;
-            
+            if(x.Rows.Count > 0)
+            {
+                string yrheader = x.Rows[i][0].ToString();
+                string departmentheader = x.Rows[i][1].ToString();
+                string examtitleheader = x.Rows[i][2].ToString();
+                yrlabel.Text = yrheader;
+                deptalbel.Text = departmentheader;
+                examtitle.Text = examtitleheader;
+            }
+            else
+            {
+                MessageBox.Show("Timetable Not Generated!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
+            }
+            Environment.Exit(1);
+
+
 
 
         }
@@ -221,7 +232,7 @@ namespace ExamTimetableApp
             int i = x.Rows.Count - 1;
             string yrheader = x.Rows[i][0].ToString();
             string departmentheader = x.Rows[i][1].ToString();
-            string examtitleheader = x.Rows[i][2].ToString(); 
+            string examtitleheader = x.Rows[i][2].ToString();
             if (x.Rows.ToString() == string.Empty)
             {
                 MessageBox.Show("Please Select Number of Subjects!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
