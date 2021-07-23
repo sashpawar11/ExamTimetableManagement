@@ -219,9 +219,9 @@ namespace ExamTimetableApp
             else
             {
                 MessageBox.Show("Timetable Not Generated!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                
+                Environment.Exit(1);
             }
-            Environment.Exit(1);
+           
 
 
 
