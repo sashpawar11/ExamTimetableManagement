@@ -892,7 +892,7 @@ namespace ExamTimetableApp
             this.panel29.Controls.Add(this.label1);
             this.panel29.Controls.Add(this.label2);
             this.panel29.Controls.Add(this.examtitle);
-            this.panel29.Location = new System.Drawing.Point(335, 3);
+            this.panel29.Location = new System.Drawing.Point(300, 13);
             this.panel29.Name = "panel29";
             this.panel29.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.panel29.Size = new System.Drawing.Size(728, 142);
@@ -912,7 +912,7 @@ namespace ExamTimetableApp
             this.label1.Size = new System.Drawing.Size(414, 23);
             this.label1.TabIndex = 12;
             this.label1.Text = "DON BOSCO COLLEGE OF ENGINEERING ";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label2
             // 
@@ -926,7 +926,7 @@ namespace ExamTimetableApp
             this.label2.Size = new System.Drawing.Size(157, 23);
             this.label2.TabIndex = 13;
             this.label2.Text = "FATORDA-GOA";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // examtitle
             // 
@@ -934,13 +934,14 @@ namespace ExamTimetableApp
             | System.Windows.Forms.AnchorStyles.Right)));
             this.examtitle.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.examtitle.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.examtitle.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.examtitle.Location = new System.Drawing.Point(90, 76);
             this.examtitle.Name = "examtitle";
             this.examtitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.examtitle.Size = new System.Drawing.Size(491, 31);
             this.examtitle.TabIndex = 14;
             this.examtitle.Text = "EXAMINATION TITLE INSERT HERE";
-            this.examtitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.examtitle.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.examtitle.Click += new System.EventHandler(this.examtitle_Click_1);
             // 
             // timetablepanel
