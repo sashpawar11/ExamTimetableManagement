@@ -204,6 +204,7 @@ namespace ExamTimetableApp
 
         }
 
+
         private void setHeaderLabels(DataTable x)   
         {
             int i = x.Rows.Count - 1;
@@ -220,6 +221,11 @@ namespace ExamTimetableApp
             {
                 MessageBox.Show("Timetable Not Generated!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Environment.Exit(1);
+                this.Close();
+                Login lg = new Login();
+                lg.Closed += (s, args) => this.Close();
+                lg.Show();
+                
             }
            
 

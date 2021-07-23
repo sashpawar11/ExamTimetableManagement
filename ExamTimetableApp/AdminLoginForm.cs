@@ -17,7 +17,7 @@ namespace ExamTimetableApp
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
 
             if ((username.Text == "dbce" ) &&  (password.Text == "123"))
@@ -34,6 +34,16 @@ namespace ExamTimetableApp
                 Login.admin = false;
                 MessageBox.Show("Invalid Username & Password. Please Retry!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

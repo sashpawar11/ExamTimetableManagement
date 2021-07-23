@@ -63,9 +63,29 @@ namespace ExamTimetableApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap adminloginui {
+            get {
+                object obj = ResourceManager.GetObject("adminloginui", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap examloginui {
             get {
                 object obj = ResourceManager.GetObject("examloginui", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap examloginui1 {
+            get {
+                object obj = ResourceManager.GetObject("examloginui1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
