@@ -61,6 +61,7 @@ namespace ExamTimetableApp
             gfx.DrawImage(image, x, y, width, height);
         }
 
+        
         private void TimeTable_Load(object sender, EventArgs e)
         {
             sub1panel.Hide();
@@ -185,8 +186,21 @@ namespace ExamTimetableApp
             }
             ((OleDbDataAdapter)new OleDbDataAdapter(cmd)).Fill(Timetabledata);        // Filling the DataTable with all entries from Excel File
             odb.Close();
-            setHeaderLabels(Timetableheaders);
-            getSubjectPanels(Timetableheaders);
+            try
+            {
+                setHeaderLabels(Timetableheaders);
+                getSubjectPanels(Timetableheaders);
+            }
+            catch (Exception)
+            {
+    
+                MessageBox.Show("Timetable Not Generated!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Restart();
+                Environment.Exit(0);
+
+
+            }
+
             try
             {
                 Timetabledata = Timetabledata.Rows
@@ -207,25 +221,12 @@ namespace ExamTimetableApp
         private void setHeaderLabels(DataTable x)   
         {
             int i = x.Rows.Count - 1;
-            if(x.Rows.Count > 0)
-            {
-                string yrheader = x.Rows[i][0].ToString();
-                string departmentheader = x.Rows[i][1].ToString();
-                string examtitleheader = x.Rows[i][2].ToString();
-                yrlabel.Text = yrheader;
-                deptalbel.Text = departmentheader;
-                examtitle.Text = examtitleheader;
-            }
-            else
-            {
-                MessageBox.Show("Timetable Not Generated!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Environment.Exit(1);
-            }
-           
-
-
-
-
+            string yrheader = x.Rows[i][0].ToString();
+            string departmentheader = x.Rows[i][1].ToString();
+            string examtitleheader = x.Rows[i][2].ToString();
+            yrlabel.Text = yrheader;
+            deptalbel.Text = departmentheader;
+            examtitle.Text = examtitleheader;
         }
         private void getSubjectPanels(DataTable x)
         {
