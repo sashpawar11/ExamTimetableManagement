@@ -21,7 +21,7 @@ namespace ExamTimetableApp
         public static string departmentName;
         public static string year;
 
-        private void createbtn_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             departmentName = departmentBox.SelectedItem.ToString();
             year = yearBox.SelectedItem.ToString();
@@ -54,7 +54,7 @@ namespace ExamTimetableApp
           
         }
 
-        private void opentable_Click_1(object sender, EventArgs e)
+        private void opentable_Click(object sender, EventArgs e)
         {
             departmentName = departmentBox.SelectedItem.ToString();
             year = yearBox.SelectedItem.ToString();
@@ -122,13 +122,10 @@ namespace ExamTimetableApp
             //}
         }
 
-      
-
-
         //private void deleteTimetable(OleDbConnection odb)
         //{
         //    odb.Open();
-
+       
         //    OleDbCommand cmd = new OleDbCommand();
 
         //    if ((year == "FE"))
