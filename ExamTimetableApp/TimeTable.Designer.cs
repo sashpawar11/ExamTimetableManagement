@@ -888,11 +888,13 @@ namespace ExamTimetableApp
             // 
             // panel29
             // 
+            this.panel29.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel29.Controls.Add(this.label1);
             this.panel29.Controls.Add(this.label2);
             this.panel29.Controls.Add(this.examtitle);
             this.panel29.Location = new System.Drawing.Point(335, 3);
             this.panel29.Name = "panel29";
+            this.panel29.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.panel29.Size = new System.Drawing.Size(728, 142);
             this.panel29.TabIndex = 33;
             this.panel29.Paint += new System.Windows.Forms.PaintEventHandler(this.panel29_Paint);
@@ -901,39 +903,40 @@ namespace ExamTimetableApp
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SlateBlue;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label1.Location = new System.Drawing.Point(167, 30);
             this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label1.Size = new System.Drawing.Size(414, 23);
             this.label1.TabIndex = 12;
             this.label1.Text = "DON BOSCO COLLEGE OF ENGINEERING ";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.SlateBlue;
             this.label2.Location = new System.Drawing.Point(300, 53);
             this.label2.Name = "label2";
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label2.Size = new System.Drawing.Size(157, 23);
             this.label2.TabIndex = 13;
             this.label2.Text = "FATORDA-GOA";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // examtitle
             // 
             this.examtitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.examtitle.AutoSize = true;
             this.examtitle.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.examtitle.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.examtitle.Location = new System.Drawing.Point(298, 76);
+            this.examtitle.Location = new System.Drawing.Point(90, 76);
             this.examtitle.Name = "examtitle";
+            this.examtitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.examtitle.Size = new System.Drawing.Size(491, 31);
             this.examtitle.TabIndex = 14;
             this.examtitle.Text = "EXAMINATION TITLE INSERT HERE";
@@ -1090,7 +1093,6 @@ namespace ExamTimetableApp
             this.panel27.ResumeLayout(false);
             this.panel27.PerformLayout();
             this.panel29.ResumeLayout(false);
-            this.panel29.PerformLayout();
             this.timetablepanel.ResumeLayout(false);
             this.panel28.ResumeLayout(false);
             this.panel28.PerformLayout();
