@@ -29,9 +29,11 @@ namespace ExamTimetableApp
         {
             using( var bmp = new Bitmap(timetablepanel.Width, timetablepanel.Height))
             {
+                button1.Hide();
                 timetablepanel.DrawToBitmap(bmp, new Rectangle(0, 0, bmp.Width, bmp.Height));
                 bmp.Save(@"savedtimetables/jpg/examtimetable.jpg");
             }
+
 
 
 
@@ -47,8 +49,8 @@ namespace ExamTimetableApp
             doc.Save(destination);
             doc.Close();
             MessageBox.Show("Timetable Successfully Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-      
-           
+            button1.Show();
+
         }
     
 

@@ -45,11 +45,11 @@ namespace ExamTimetableApp
             bool adminaccess = Login.admin;
             opentable.Show();
             createbtn.Hide();
-            updatebtn.Hide();
+            //updatebtn.Hide();
             if(adminaccess)
             {
                 createbtn.Show();
-                updatebtn.Show();
+                //updatebtn.Show();
             }
           
         }

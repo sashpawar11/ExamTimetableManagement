@@ -157,7 +157,7 @@ namespace ExamTimetableApp
             sub5.Hide();
             sub6.Hide();
 
-            MessageBox.Show(dept);
+            
 
 
         }
