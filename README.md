@@ -1,4 +1,4 @@
-# Exam Timetable Management App
+![alt text](https://github.com/sashpawar11/ExamTimetableManagement/blob/master/screenshot.jpg?raw=true)
 ##### An easy App for students to view their Examination Timetables and Timetable Management for College Administration.
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
