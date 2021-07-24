@@ -19,6 +19,7 @@ Clone this repository on your local machine using this command, and import the p
 ```sh
 $ git clone https://github.com/sashpawar11/ExamTimetableManagement.git 
 ```
+Copy "savedtimetables" and "timetabledatabase" folders to your local D: before running the program.
 
 
 ## Developers
